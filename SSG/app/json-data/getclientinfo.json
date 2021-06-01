@@ -1,0 +1,195 @@
+{
+  "status": 200,
+  "ApplicationDomain": null,
+  "content": {
+    "clientid": "saw01",
+    "gtmcontainer": "GTM-KLVQQT9",
+    "name": "localhost,localhost:9001,localhost:9080,stg-sportsadda.sportz.io,cf-stg-sportsadda.sportz.io",
+    "BucketName": "assets-sportsadda/beta/static-assets/waf-images",
+    "bucket_region": "us-east-1",
+    "secretkey": "-",
+    "AspectRatio": "0,16/9,4/3,1/1,21/9,2/3,6/4",
+    "imagesize": "",
+    "Title": "SportsAdda",
+    "PlayerXML": {},
+    "feconfig": {
+      "wafapi": "{{BASE_URL}}/api/getpageinfo?url={{SLUG}}",
+      "redirections": {
+        "/redirects": "/redirected"
+      },
+      "imagePaths": {
+        "teamImg": "https://beta-sportsadda.sportz.io/static-assets/images/{{SPORT}}/teams/{{TEAM_ID}}.png?v={{IMGVERSION}}",
+        "playerImg": "https://beta-sportsadda.sportz.io/static-assets/images/{{SPORT}}/players/{{PLAYER_ID}}.png?v={{IMGVERSION}}"
+      },
+      "commonApis": {
+        "translations": "https://beta-sportsadda.sportz.io/static-assets/wl-dev/multisport/trans/{{LANG}}.json",
+        "customNames": "https://beta-sportsadda.sportz.io/static-assets/wl-dev/multisport/customName/customName_{{LANG}}.json"
+      },
+      "widgets": {
+        "si-scorestrip": {
+          "apis": {
+            "multiSport": "http://localhost:3000/sifeeds/multisport/?methodtype=3&client=7374756d70&sport={{SPORT}}&league={{LEAGUE}}&timezone=0530&language={{LANG}}&{{FEEDTYPE}}={{FEEDVALUE}}"
+          }
+        },
+        "si-standings": {
+          "apis": {
+            "cricket": "http://localhost:3000/sifeeds/repo/cricket/live/json/standing_{{SERIESID}}.json",
+            "football": "http://localhost:3000/sifeeds/repo/football/live/{{LEAGUE}}/json/{{SERIESID}}_standing.json",
+            "kabaddi": "http://localhost:3000/sifeeds/repo/kabaddi/live/json/{{SERIESID}}_standing.json"
+          }
+        },
+        "si-serieslisting": {
+          "apis": {
+            "seriesListing": "http://localhost:3000/static-assets/waf-feeds/cricket/static/json/{{YEAR}}_tour_series.json"
+          }
+        },
+        "si-fixtures": {
+          "apis": {
+            "dateList": "http://localhost:3000/sifeeds/multisport/?methodtype=3&client=7374756d70&sport={{SPORT}}&league={{LEAGUE}}&timezone=0530&language={{LANG}}&datelist=true",
+            "multiSport": "http://localhost:3000/sifeeds/multisport/?methodtype=3&client=7374756d70&sport={{SPORT}}&league={{LEAGUE}}&timezone=0530&language={{LANG}}&{{FEEDTYPE}}={{FEEDVALUE}}"
+          }
+        },
+        "si-tracker": {
+          "apis": {
+            "dateList": "http://localhost:3000/sifeeds/multisport/?methodtype=3&client=7374756d70&sport={{SPORT}}&league={{LEAGUE}}&timezone=0530&language={{LANG}}&datelist=true",
+            "multiSport": "http://localhost:3000/sifeeds/multisport/?methodtype=3&client=7374756d70&sport={{SPORT}}&league={{LEAGUE}}&timezone=0530&language={{LANG}}&{{FEEDTYPE}}={{FEEDVALUE}}"
+          }
+        }
+      }
+    },
+    "APIDomain": "http://localhost:8888",
+    "ApplicationDomain": "https://stg-sportsadda.sportz.io",
+    "IMAGEDOMAIN": "https://stg-sportsadda.sportz.io",
+    "TimeZone": "India Standard Time",
+    "SchemaPrefix": "labsaw",
+    "ClientPrefix": "labsaw",
+    "ProcedurePrefix": "labsaw.labsaw",
+    "GAUCCode": {},
+    "GACode": {},
+    "ClientName": "web",
+    "UrlStructure": "{0}/{1}/{2}",
+    "AssetEntityMap": {},
+    "RegexData": {},
+    "pagesregex": {},
+    "AuthorPageRegex": "-",
+    "IAFeedTitle": "India's go-to site for cricket scores, news and videos",
+    "IAFeedDescription": "Find live Cricket, Football and Kabaddi Scores, latest news, score updates, along with Videos, Rankings, Squad Information and much more on SportsAdda.",
+    "IsIncludeCoverPhoto": "0",
+    "SIadd": "1,211",
+    "SIcustom": "1,211",
+    "Filter": "author,user,category,language,sports",
+    "cssversion": "1.6",
+    "staticfiles": {
+      "js": " ",
+      "css": [
+        "/static-assets/build/css/amp.css",
+        "/static-assets/build/css/contact.css",
+        "/static-assets/build/css/core.css",
+        "/static-assets/build/css/detail.css",
+        "/static-assets/build/css/error.css",
+        "/static-assets/build/css/listing.css",
+        "/static-assets/build/css/login.css",
+        "/static-assets/build/css/main.css",
+        "/static-assets/build/css/manofmatch.css",
+        "/static-assets/build/css/matchcentre.css",
+        "/static-assets/build/css/scorecard.css",
+        "/static-assets/build/css/static.css",
+        "/static-assets/build/css/tips-prediction.css",
+        "/static-assets/build/css/widgets/si-footballscorecard/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-cricketscorecard/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-fixtures/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-kabaddiscorecard/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-gallery/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-listing/related-listing.css",
+        "/static-assets/build/css/widgets/si-listing/rhs-listing.css",
+        "/static-assets/build/css/widgets/si-listing/series-home.css",
+        "/static-assets/build/css/widgets/si-listing/sport-generic.css",
+        "/static-assets/build/css/widgets/si-listing/sport-home.css",
+        "/static-assets/build/css/widgets/si-listing/spotlight-home.css",
+        "/static-assets/build/css/widgets/si-listing/video-home.css",
+        "/static-assets/build/css/widgets/si-search/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-standings/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-serieslisting/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-statsdetail/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-tagcontentlisting/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-statslisting/widget_layout_01.css",
+        "/static-assets/build/css/widgets/si-tracker/widget_layout_01.css"
+      ]
+    },
+    "jsversion": "1.0",
+    "feedversion": "1.0",
+    "LangConfig": [{ "langname": "English", "langvalue": "en" }],
+    "ExtFeedAPI": {},
+    "MatchFeedAPI": "{}",
+    "CacheConfig": null,
+    "EntityAutoTag": null,
+    "CassseFeedDetails": [],
+    "EmailConfig": {},
+    "SitemapSettings": "{}",
+    "paymentGateway": "-",
+    "IsTiny": "true",
+    "ShowPreview": "false",
+    "IsLiveBlog": "true",
+    "IsAudioEnable": "false",
+    "IsAutoSaved": "true",
+    "IsAWS": "true",
+    "IsFocusBy": "true",
+    "NewProcedurePrefix": "labsaw",
+    "imgversion": "1.0",
+    "playerImg": "1.0",
+    "teamImg": "1.0",
+    "coachImg": "1.0",
+    "GroupIDTypeID": "1,1",
+    "ImagePathKey": "https://s3.ap-south-1.amazonaws.com/assets-sportsadda/beta/static-assets/waf-images/",
+    "ImageReplaceKey": "/static-assets/waf-images/",
+    "RedisConnection": "",
+    "webhookurls": { "waflb": "", "wafcms": "https://stg-sportsadda.sportz.io/apiv3/wafcmshook" },
+    "GdrpEntityId": "",
+    "createbucket": "false",
+    "fbapp_id": "355671268626456",
+    "client_emailid": "info@sportsadda.com",
+    "client_display_name": "SportsAdda",
+    "fbpages": "210271123186855",
+    "ClientUrl": "https://stg-sportsadda.sportz.io",
+    "ClientNameTitle": "Stumped Entertainment FZE",
+    "GAHindiCode": "",
+    "GAEnglishCode": "UA-140795332-2",
+    "PreferredLanguage": "English",
+    "DefaultLanguage": "en",
+    "EncryptGuid": "true",
+    "videoTokenization": "false",
+    "videoTokenizationEncryptionKey": "",
+    "videoTokenizationSaltKey": "",
+    "PhysicalDirPath": "",
+    "fontVersion": "123456789765432123456",
+    "defaultImagePath": "/static-assets/images/lazy-load.png",
+    "defaultProfileImage": "/static-assets/images/users/default-profile.png",
+    "Uploadfilepath": "assets-sportsadda/beta/static-assets/uploads/",
+    "IsMobileEnabled": "true",
+    "isMemcacheEnabled": "",
+    "wafcachetype": "0",
+    "memchachetime": "",
+    "stalecachetime": "",
+    "cachingapiids": "",
+    "maxage": "",
+    "environment": "beta",
+    "HtmlMinification": "false",
+    "enablerolemodule": "true",
+    "IsPurge": "true",
+    "enableredis": "true",
+    "ExtarnalDomain": "",
+    "CssDomain": "",
+    "JsDomain": "",
+    "live_sport_feed_url": "",
+    "default_sport_url": "",
+    "allowedcanonicalparameters": "",
+    "IsS3BucketPublic": "true"
+  },
+  "ImagesData": null,
+  "Authodata": null,
+  "NextPrev": null,
+  "EntityData": null,
+  "RelatedArticle": null,
+  "message": null,
+  "meta": null
+}

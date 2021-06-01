@@ -1,0 +1,8 @@
+{
+  "CONFIG_API": "http://localhost:8888/api/getclientinfo",
+  "CLIENT": "sportsadda",
+  "LOCAL_LANG_CONFIG": {
+    "english": "en",
+    "default": "en"
+  }
+}

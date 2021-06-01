@@ -1,0 +1,13 @@
+User-agent: Twitterbot
+Disallow:
+User-agent: *
+Allow : 
+Disallow: /fantasy-cricket/my-team/
+Disallow: /fantasy-cricket/leagues/
+Disallow: /fantasy-cricket/leaderboard/
+Disallow: /fantasy-cricket/challenges/
+Disallow: /fantasy-cricket/admin/
+Disallow: /scrapperlayout
+Disallow: */page/*?loadmore=*
+Sitemap: https://www.sportsadda.com/site-map/sitemap.xml
+Disallow:*search?q=

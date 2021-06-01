@@ -1,0 +1,52 @@
+config:
+  target: "https://stg-sportsadda.sportz.io"
+  phases:
+    # - duration: 45
+    #   arrivalRate: 4
+    #   # maxVusers: 10
+    #   name: "Start"
+    # - duration: 45
+    #   arrivalRate: 5
+    #   rampTo: 10
+    #   # maxVusers: 10
+    #   name: "Warm up"
+    - duration: 60
+      arrivalRate: 1
+      # maxVusers: 20
+      name: "Load"
+# scenarios:
+#   - name: "Home Page"
+#     weight: 1
+#     flow:
+#       - get:
+#           url: "/?cache-buster"
+#   - name: "Scorecard"
+#     weight: 2
+#     flow:
+#       - get:
+#           url: "/cricket/scores-fixtures/scorecard/northern-districts-vs-wellington-firebirds-live-scores-firstclass-match-nuve03182021198387?cache-buster"
+#   - name: "Detail Pages"
+#     weight: 4
+#     flow:
+#       - get:
+#           url: "/cricket/news/axar-patel-injury-india-england-first-test?cache-buster"
+#       - get:
+#           url: "/cricket/videos/india-vs-england-numbers-that-help-you-win?cache-buster"
+scenarios:
+  - name: "Home Page"
+    weight: 1
+    flow:
+      - get:
+          url: "/apiv3/gettemplatedata?url=&cache-buster"
+  - name: "Scorecard"
+    weight: 2
+    flow:
+      - get:
+          url: "/apiv3/gettemplatedata?url=%2Fcricket%2Fscores-fixtures%2Fscorecard%2Fnorthern-districts-vs-wellington-firebirds-live-scores-firstclass-match-nuve03182021198387&cache-buster"
+  - name: "Detail Pages"
+    weight: 4
+    flow:
+      - get:
+          url: "/apiv3/gettemplatedata?url=%2Fcricket%2Fnews%2Findian-t20-league-2021-auction-likely-to-happen-on-11th-february&cache-buster"
+      - get:
+          url: "/apiv3/gettemplatedata?url=%2Fcricket%2Fvideos%2Findia-vs-england-numbers-that-help-you-win&cache-buster"

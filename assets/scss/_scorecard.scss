@@ -1,0 +1,245 @@
+@import "../../../../sass/variables";
+@import "../../../../sass/mixins";
+@import "_variables";
+@import "_mixin";
+
+body {
+  &.scorecard-active {
+    .section-wrap {
+      padding-top: 350px;
+    }
+    .waf-scorecard {
+      position: fixed;
+      top: 55px;
+      background: $secondary-color;
+      z-index: 9;
+      width: calc(100% - 220px);
+    }
+    .head-wrap {
+      padding-right: 10px;
+    }
+  }
+}
+.waf-ads {
+  .waf-ads-banner {
+    width: 100%;
+    height: 56px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.app-ads {
+    background: #112e61;
+    height: 56px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 10px;
+    margin: 10px 0;
+    .waf-ads-banner {
+      @include flex-config(flex, null, space-between, center);
+    }
+    .title {
+      font-family: $bold_font-family;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+    }
+    .ads-action {
+      @include flex-config(flex, null, null, center);
+      img {
+        width: 92px;
+        height: 27px;
+        object-fit: cover;
+        margin: 0 5px;
+      }
+      span {
+        font-family: $medium_font-family;
+        font-size: 10px;
+        line-height: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+.waf-scorecard {
+  .head {
+    &-wrap {
+      @include flex-config(flex, null, space-between, center);
+      margin-bottom: 20px;
+    }
+    &-tab {
+      position: relative;
+      width: 200px;
+    }
+  }
+  .more-btn {
+    display: none;
+  }
+  .dropdown-wrap {
+    .waf-select-box {
+      position: relative;
+      width: 100px;
+      height: 30px;
+      line-height: 28px;
+      .selected-title {
+        position: relative;
+        cursor: pointer;
+        padding: 0 15px;
+        padding-right: 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        border: 1px solid #bcc3da;
+        font-size: 12px;
+        display: inline-block;
+        width: 100%;
+        color: #225cc2;
+        font-family: $bold_font-family;
+        @include border-radius(5px);
+      }
+      .select-list {
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        display: none;
+        max-height: 200px;
+        overflow-y: auto;
+        background-color: #00306c;
+        border: 1px solid rgba(33, 57, 132, 0.3);
+        @include border-radius(5px);
+        box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 11%);
+        li {
+          font-size: 14px;
+          font-weight: normal;
+          padding: 8px 15px;
+          &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+    }
+    &.active {
+      .select-list {
+        display: block;
+      }
+    }
+  }
+  .card {
+    &-list {
+      @include flex-config(flex, null, null, center);
+      margin: 0 -5px;
+      overflow-x: auto;
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+      &::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+    }
+    &-header {
+      @include flex-config(flex, null, space-between, flex-start);
+      .title {
+        font-size: 11px;
+        line-height: 14px;
+        color: $primary-color;
+        width: calc(100% - 100px);
+        font-family: $regular_font-family;
+        margin: 0;
+      }
+      .matchinfo {
+        font-family: $bold_font-family;
+      }
+      .status {
+        font-size: 8px;
+        text-transform: uppercase;
+        font-family: $medium_font-family;
+        line-height: 11px;
+        @include border-radius(3px);
+        color: $secondary-color;
+        padding: 3px 5px;
+      }
+    }
+    &-item {
+      background: #fafafa;
+      border: 1px solid #dcdcdc;
+      @include border-radius(5px);
+      width: 350px;
+      padding: 10px;
+      height: 130px;
+      margin: 0 5px;
+      flex-shrink: 0;
+      &.live {
+        .status {
+          background-color: #02b523;
+        }
+      }
+      &.recent {
+        .status {
+          background-color: #ed0000;
+        }
+      }
+      &.upcoming {
+        .status {
+          background-color: #a8a8a8;
+        }
+      }
+    }
+    &-content {
+      .team {
+        font-family: $bold_font-family;
+        color: $primary-color;
+        @include flex-config(flex, null, space-between, center);
+        margin: 5px 0;
+        &-info {
+          @include flex-config(flex, null, null, center);
+        }
+        &-logo {
+          width: 35px;
+          height: 24px;
+          object-fit: contain;
+          @include border-radius(2px);
+          margin-right: 10px;
+        }
+        &-name {
+          font-size: 11px;
+          line-height: 16px;
+          text-transform: uppercase;
+        }
+        &-score {
+          font-size: 12px;
+          &.won {
+            color: $orange-color;
+          }
+          &.active {
+            color: $orange-color;
+          }
+          &.lost {
+            opacity: 50%;
+          }
+        }
+      }
+    }
+    &-footer {
+      .team-status {
+        font-size: 11px;
+        line-height: 16px;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-phone-max) {
+  body {
+    &.scorecard-active {
+      .waf-scorecard {
+        top: 90px;
+        width: 100%;
+      }
+      .head-wrap {
+        padding-right: 16px;
+      }
+    }
+  }
+}

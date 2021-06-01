@@ -1,0 +1,10 @@
+{
+    "sports":["/football","/cricket","/kabaddi"],
+    "fixtures":["/football/scores-fixtures","/cricket/scores-fixtures","/kabaddi/scores-fixtures"],
+    "games":["/games/man-of-the-match","/fantasy-cricket/home"],
+    "home":["/"],
+    "betting":["/cricket/betting-tips"],
+    "videos":["/cricket/videos","/football/videos","/kabaddi/videos"],
+    "news":["/cricket/news","/football/news","/kabaddi/news"],
+    "others":["/cricket/indian-t20-league"]
+}

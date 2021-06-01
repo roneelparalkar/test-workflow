@@ -1,0 +1,5 @@
+$(npm bin)/artillery run --output ./report/report.json script.yaml
+
+npx artillery run --output ./report/report.json script.yaml
+
+$(npm bin)/artillery report --output report.html ./report/report.json

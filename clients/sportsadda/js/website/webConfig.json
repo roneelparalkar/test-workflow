@@ -1,0 +1,69 @@
+{
+  "scrollOffset": 300,
+  "throttleTime": 200,
+  "modules": {
+    "shareModule": {
+      "handled": 0,
+      "moduleRequired": 1,
+      "moduleLoaded": 0,
+      "fbShareSdk": "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId="
+    }
+  },
+  "imagePaths": {
+    "teamImg": "/static-assets/images/{{SPORT}}/teams/{{TEAM_ID}}.png?v={{IMGVERSION}}",
+    "playerImg": "/static-assets/images/{{SPORT}}/players/{{PLAYER_ID}}.png?v={{IMGVERSION}}"
+  },
+  "captchaKey": "6LdBdMMZAAAAAMiTVNABqLhW8SSVL2k5mZPw-uK_",
+  "vue": "/static-assets/build/js/vue.min.js",
+  "common": {
+    "analytics": "/static-assets/build/js/analytics.util.js"
+  },
+  "index": {
+    "/login": "/static-assets/build/js/loginModule.js",
+    "/signup": "/static-assets/build/js/signupModule.js",
+    "/profile": "/static-assets/build/js/profileModule.js",
+    "/games/man-of-the-match": "/static-assets/build/js/motm.js",
+    "/search": "/static-assets/build/js/searchPage.js",
+    "/tips-and-predictions": "/static-assets/build/js/tipsAndPredictions.js",
+    "/unsubscribe": "/static-assets/build/js/unsubscribeModule.js",
+    "/videos":"/static-assets/build/js/videoDetail.js"
+  },
+  "login": {
+    "login": "/socialapi/auth/signin",
+    "forgotPwd": "/socialapi/auth/ForgotPassword",
+    "resetPwd": "/socialapi/auth/PasswordUpdate",
+    "getRandomToken": "/api/getrandomtoken",
+    "logout": "/socialapi/auth/signout",
+    "acceptCookies": "/socialapi/auth/allowcookie",
+    "getUnsubscribedInfo": "/api/getunsubscribedinfo?user_guid={{GUID}}",
+    "submitUnsubscribe": "/api/insertcontactuserdetails"
+  },
+  "signUp": {
+    "checkUserExist": "/socialapi/auth/checkuserexist",
+    "registerUser": "/socialapi/auth/register",
+    "verifyAfterRegister": "/socialapi/auth/Verification"
+  },
+  "profile": {
+    "verifyOtp": "/socialapi/auth/verifyotp",
+    "sendOtp": "/socialapi/auth/sendotp",
+    "uploadProfile": "/socialapi/auth/imagepost",
+    "uploadProfileLogin": "/socialapi/auth/imagepost?islogin={{ISLOGIN}}",
+    "getProfileUser": "/socialapi/auth/getProfile",
+    "updateProfileUser": "/socialapi/auth/updateProfile",
+    "getSportsData": "/static-assets/feeds/profile_favourites.json?v={{FEEDVERSION}}"
+  },
+  "motm": {
+    "counterTimer": "/static-assets/build/js/counterTimer.js",
+    "poll": "/api/polldetail/{{ENTITY_ID}}?spgnnum={{SPGNNUM}}&sitem={{SITEM}}&user_guid={{USER_GUID}}",
+    "leaderBoard": "/api/getrunasoneleaderboard",
+    "submitPoll": "/api/submitpoll",
+    "getHtmlUrl": "https://464okvtx8d.execute-api.ap-south-1.amazonaws.com/prod/getHtml",
+    "imgGeneratorPath": "https://v0yzv923b6.execute-api.ap-south-1.amazonaws.com/dev/ImageGenerator",
+    "imageKey": "{{ENV}}/static-assets/campaign/motm/images/{{USER_GUID}}-{{OPTION_ID}}-{{TIMESTAMP}}.png",
+    "imagePath": "{{BASE_URL}}/static-assets/campaign/motm/images/{{USER_GUID}}-{{OPTION_ID}}-{{TIMESTAMP}}.png",
+    "templateUrl": "{{BASE_URL}}/static-assets/campaign/motm/templates/motm.pug?v={{JSVERSION}}"
+  },
+  "videoDetail":{
+    "getRelatedVideos":"/api/listing?entities={{ENTITIES}}&otherent={{OTHER_ENT}}&pgnum={{PAGENUM}}&inum={{INUM}}&pgsize={{PAGESIZE}}"
+  }
+}

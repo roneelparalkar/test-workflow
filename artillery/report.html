@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artillery report</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.0/d3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.6.0/metricsgraphics.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.6.0/metricsgraphics.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic" rel="stylesheet" type="text/css" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js" charset="utf-8"></script>
+
+    <style>
+      body,
+      p,
+      li {
+        font-family: sans-serif;
+        font-size: 10pt;
+      }
+
+      h1 {
+        font-size: 18pt;
+        font-weight: bold;
+      }
+
+      #errorsContainer > p {
+        color: #009900;
+      }
+
+      #footer {
+        padding: 1em;
+        font-size: 0.8em;
+        color: #999;
+        text-align: center;
+        margin-top: 1em;
+        background-color: #eee;
+      }
+      #editor {
+        font-size: 8pt;
+        height: 20em;
+      }
+    </style>
+
+    <script>
+      window.Report = {
+        aggregate: {
+          timestamp: "2021-03-18T21:07:05.468Z",
+          scenariosCreated: 390,
+          scenariosCompleted: 390,
+          requestsCompleted: 603,
+          latency: {
+            min: 315.7,
+            max: 3632.5,
+            median: 946.9,
+            p95: 1885,
+            p99: 2729
+          },
+          rps: {
+            count: 603,
+            mean: 4.86
+          },
+          scenarioDuration: {
+            min: 1869.3,
+            max: 8484.6,
+            median: 3262.6,
+            p95: 5263.1,
+            p99: 6324
+          },
+          scenarioCounts: {
+            "Detail Pages": 213,
+            Scorecard: 135,
+            "Home Page": 42
+          },
+          errors: {},
+          codes: {
+            "200": 603
+          },
+          matches: 0,
+          customStats: {},
+          counters: {},
+          scenariosAvoided: 0,
+          phases: [
+            {
+              duration: 30,
+              arrivalRate: 1,
+              name: "Start"
+            },
+            {
+              duration: 30,
+              arrivalRate: 1,
+              rampTo: 3,
+              name: "Warm up"
+            },
+            {
+              duration: 60,
+              arrivalRate: 5,
+              name: "Load"
+            }
+          ]
+        },
+        intermediate: [
+          {
+            timestamp: "2021-03-18T21:05:10.380Z",
+            scenariosCreated: 9,
+            scenariosCompleted: 5,
+            requestsCompleted: 10,
+            latency: {
+              min: 640.8,
+              max: 3099.3,
+              median: 1829.6,
+              p95: 3099.3,
+              p99: 3099.3
+            },
+            rps: {
+              count: 12,
+              mean: 1.35
+            },
+            scenarioDuration: {
+              min: 4044.8,
+              max: 6313.1,
+              median: 5078,
+              p95: 6313.1,
+              p99: 6313.1
+            },
+            scenarioCounts: {
+              "Detail Pages": 4,
+              Scorecard: 4,
+              "Home Page": 1
+            },
+            errors: {},
+            codes: {
+              "200": 10
+            },
+            matches: 0,
+            latencies: [3042550640, 3099326383, 2161642337, 1706959286, 640798478, 1781329801, 709846223, 1533202117, 2980272469, 1877963133],
+            customStats: {},
+            counters: {},
+            concurrency: 4,
+            pendingRequests: 2,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:05:20.381Z",
+            scenariosCreated: 10,
+            scenariosCompleted: 11,
+            requestsCompleted: 15,
+            latency: {
+              min: 658.4,
+              max: 2157.2,
+              median: 1650.3,
+              p95: 2112,
+              p99: 2157.2
+            },
+            rps: {
+              count: 14,
+              mean: 1.4
+            },
+            scenarioDuration: {
+              min: 3702.4,
+              max: 5263.1,
+              median: 4430.8,
+              p95: 5247.6,
+              p99: 5263.1
+            },
+            scenarioCounts: {
+              "Detail Pages": 3,
+              Scorecard: 5,
+              "Home Page": 2
+            },
+            errors: {},
+            codes: {
+              "200": 15
+            },
+            matches: 0,
+            latencies: [
+              1976187976,
+              1701531122,
+              658417466,
+              1722524214,
+              1630829575,
+              1595914609,
+              682178255,
+              1680265902,
+              2157235705,
+              786370070,
+              1735783569,
+              734804410,
+              1578536981,
+              1740248974,
+              1650257927
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 3,
+            pendingRequests: 1,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:05:30.377Z",
+            scenariosCreated: 10,
+            scenariosCompleted: 8,
+            requestsCompleted: 11,
+            latency: {
+              min: 781.3,
+              max: 2679.4,
+              median: 1781.4,
+              p95: 2677.6,
+              p99: 2679.4
+            },
+            rps: {
+              count: 13,
+              mean: 1.3
+            },
+            scenarioDuration: {
+              min: 3633.6,
+              max: 5969,
+              median: 3794.3,
+              p95: 5969,
+              p99: 5969
+            },
+            scenarioCounts: {
+              "Home Page": 1,
+              Scorecard: 5,
+              "Detail Pages": 4
+            },
+            errors: {},
+            codes: {
+              "200": 11
+            },
+            matches: 0,
+            latencies: [
+              1649058924,
+              1749926450,
+              1736111685,
+              1963177747,
+              2679372624,
+              2043646137,
+              2643890543,
+              1781407749,
+              781290930,
+              2574459789,
+              1640265106
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 5,
+            pendingRequests: 3,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:05:40.382Z",
+            scenariosCreated: 11,
+            scenariosCompleted: 14,
+            requestsCompleted: 18,
+            latency: {
+              min: 737.6,
+              max: 2539.9,
+              median: 1676.7,
+              p95: 2375.8,
+              p99: 2539.9
+            },
+            rps: {
+              count: 15,
+              mean: 1.5
+            },
+            scenarioDuration: {
+              min: 3526.2,
+              max: 5952.7,
+              median: 4367.9,
+              p95: 5882.8,
+              p99: 5952.7
+            },
+            scenarioCounts: {
+              "Detail Pages": 5,
+              "Home Page": 1,
+              Scorecard: 5
+            },
+            errors: {},
+            codes: {
+              "200": 18
+            },
+            matches: 0,
+            latencies: [
+              748473089,
+              1053651141,
+              2539897729,
+              1714082537,
+              1794721831,
+              1708238028,
+              1645138959,
+              737598280,
+              1898055193,
+              941990106,
+              2129771856,
+              1915717518,
+              2107990069,
+              1816390847,
+              1613053455,
+              859127541,
+              825582511,
+              1606276758
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 2,
+            pendingRequests: 0,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:05:50.379Z",
+            scenariosCreated: 19,
+            scenariosCompleted: 14,
+            requestsCompleted: 25,
+            latency: {
+              min: 614.2,
+              max: 2784.9,
+              median: 1553,
+              p95: 2034,
+              p99: 2784.9
+            },
+            rps: {
+              count: 27,
+              mean: 2.8
+            },
+            scenarioDuration: {
+              min: 3413.1,
+              max: 5202.6,
+              median: 4820.2,
+              p95: 5182.8,
+              p99: 5202.6
+            },
+            scenarioCounts: {
+              Scorecard: 4,
+              "Detail Pages": 12,
+              "Home Page": 3
+            },
+            errors: {},
+            codes: {
+              "200": 25
+            },
+            matches: 0,
+            latencies: [
+              671868543,
+              1690491422,
+              845805688,
+              1728007508,
+              1672689564,
+              1499195877,
+              2784918886,
+              1752547781,
+              1593465849,
+              741924886,
+              1604181287,
+              1497322959,
+              614242636,
+              1675495030,
+              679352571,
+              1702677355,
+              1527893503,
+              617741102,
+              646110516,
+              1783692457,
+              1602978354,
+              1506659219,
+              677507473,
+              1628457494,
+              1553006176
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 7,
+            pendingRequests: 2,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:06:00.381Z",
+            scenariosCreated: 28,
+            scenariosCompleted: 20,
+            requestsCompleted: 39,
+            latency: {
+              min: 605.1,
+              max: 2647.4,
+              median: 1556.6,
+              p95: 2546.9,
+              p99: 2647.4
+            },
+            rps: {
+              count: 44,
+              mean: 4.64
+            },
+            scenarioDuration: {
+              min: 3476.3,
+              max: 5915.3,
+              median: 4747.6,
+              p95: 5875,
+              p99: 5915.3
+            },
+            scenarioCounts: {
+              Scorecard: 10,
+              "Detail Pages": 16,
+              "Home Page": 2
+            },
+            errors: {},
+            codes: {
+              "200": 39
+            },
+            matches: 0,
+            latencies: [
+              1583997349,
+              1588834739,
+              900589430,
+              676338230,
+              1655105225,
+              717156270,
+              1518908931,
+              1698617561,
+              1479655989,
+              2647374396,
+              658887463,
+              1594865278,
+              652702512,
+              1604309622,
+              1699897430,
+              2512078818,
+              1525115005,
+              1556578818,
+              727079952,
+              1576867901,
+              605094967,
+              1574614201,
+              1639829927,
+              737598611,
+              2575372046,
+              1594081636,
+              1615732903,
+              649247357,
+              1562445418,
+              1510267003,
+              1540388869,
+              1647207818,
+              1529105487,
+              646344095,
+              1540624425,
+              665605999,
+              1560489272,
+              675780879,
+              1615739138
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 15,
+            pendingRequests: 7,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:06:10.380Z",
+            scenariosCreated: 47,
+            scenariosCompleted: 47,
+            requestsCompleted: 74,
+            latency: {
+              min: 370.5,
+              max: 3564.1,
+              median: 1075.1,
+              p95: 1733.2,
+              p99: 3126.9
+            },
+            rps: {
+              count: 73,
+              mean: 7.31
+            },
+            scenarioDuration: {
+              min: 2232.5,
+              max: 8484.6,
+              median: 4233.7,
+              p95: 6363.1,
+              p99: 8484.6
+            },
+            scenarioCounts: {
+              "Detail Pages": 28,
+              "Home Page": 8,
+              Scorecard: 11
+            },
+            errors: {},
+            codes: {
+              "200": 74
+            },
+            matches: 0,
+            latencies: [
+              779392922,
+              1566100391,
+              621757835,
+              1681117675,
+              1550572173,
+              1643313746,
+              758480645,
+              1641587230,
+              1547982665,
+              644002519,
+              1629806622,
+              1740691430,
+              618880579,
+              1647065702,
+              1542853395,
+              1530367980,
+              696903646,
+              1722207022,
+              727528140,
+              1586340759,
+              1544130540,
+              678538770,
+              1572299810,
+              1618292271,
+              697463267,
+              1561142695,
+              681304813,
+              1644368567,
+              1505745731,
+              1742223220,
+              1516896332,
+              1322746957,
+              1211644193,
+              719676350,
+              1496251596,
+              1200606516,
+              997132524,
+              691155575,
+              946815129,
+              1008363196,
+              1735906582,
+              1225103817,
+              1039486041,
+              1097741385,
+              1105835624,
+              946476127,
+              1108171847,
+              1016486743,
+              393278611,
+              944810072,
+              467751443,
+              3564131104,
+              497620457,
+              885864300,
+              1282272000,
+              1114103771,
+              1003976934,
+              936768834,
+              799567041,
+              1140354333,
+              481464970,
+              683694250,
+              1089278732,
+              1085960187,
+              1492434276,
+              936488127,
+              403770944,
+              497756069,
+              1064185508,
+              980652810,
+              370455764,
+              979516508,
+              499804587,
+              417244791
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 15,
+            pendingRequests: 6,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:06:20.387Z",
+            scenariosCreated: 50,
+            scenariosCompleted: 52,
+            requestsCompleted: 80,
+            latency: {
+              min: 365.8,
+              max: 3632.5,
+              median: 933.4,
+              p95: 1869.9,
+              p99: 3215.1
+            },
+            rps: {
+              count: 80,
+              mean: 8.01
+            },
+            scenarioDuration: {
+              min: 2037.5,
+              max: 6929.9,
+              median: 3362.4,
+              p95: 4532.1,
+              p99: 6911.4
+            },
+            scenarioCounts: {
+              "Detail Pages": 29,
+              Scorecard: 17,
+              "Home Page": 4
+            },
+            errors: {},
+            codes: {
+              "200": 80
+            },
+            matches: 0,
+            latencies: [
+              1166554894,
+              974861885,
+              882771132,
+              417366071,
+              935238525,
+              1175899722,
+              419089470,
+              1366964661,
+              1188774536,
+              367412318,
+              1018099694,
+              501799828,
+              399936895,
+              569723687,
+              1503623863,
+              977670651,
+              516121865,
+              1169790005,
+              797293253,
+              1023394433,
+              687905400,
+              1994337526,
+              1078078333,
+              1320294402,
+              982297271,
+              866837713,
+              401116634,
+              388508035,
+              878212192,
+              446441627,
+              880075850,
+              873734457,
+              1324777355,
+              875397738,
+              938985349,
+              980175765,
+              365817604,
+              528190037,
+              496335505,
+              584087173,
+              1024069385,
+              1296825930,
+              717412692,
+              418582259,
+              1029686245,
+              1282263898,
+              912910198,
+              399184020,
+              907957100,
+              1765477845,
+              489399745,
+              873595088,
+              3632471095,
+              558669028,
+              409748393,
+              1974388937,
+              1015755963,
+              938790524,
+              1033177104,
+              1659584480,
+              2241383414,
+              484395909,
+              614559571,
+              1215712858,
+              816774629,
+              778947451,
+              1400908053,
+              1207312430,
+              1105586286,
+              931614532,
+              924637143,
+              958114528,
+              1050721316,
+              427874342,
+              1011607138,
+              1008268887,
+              383857409,
+              1318246831,
+              908187598,
+              1364551045
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 13,
+            pendingRequests: 6,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:06:30.381Z",
+            scenariosCreated: 50,
+            scenariosCompleted: 50,
+            requestsCompleted: 78,
+            latency: {
+              min: 332.1,
+              max: 1391,
+              median: 938.6,
+              p95: 1218.6,
+              p99: 1365.6
+            },
+            rps: {
+              count: 77,
+              mean: 7.72
+            },
+            scenarioDuration: {
+              min: 1936.2,
+              max: 3821.3,
+              median: 2969.3,
+              p95: 3724.4,
+              p99: 3821.3
+            },
+            scenarioCounts: {
+              Scorecard: 22,
+              "Detail Pages": 25,
+              "Home Page": 3
+            },
+            errors: {},
+            codes: {
+              "200": 78
+            },
+            matches: 0,
+            latencies: [
+              445676087,
+              1252571905,
+              1074912793,
+              957225075,
+              1049025154,
+              422407910,
+              1044430087,
+              349427519,
+              1107340353,
+              542601455,
+              1136838064,
+              945736941,
+              534832852,
+              995244806,
+              500953737,
+              939070690,
+              980592765,
+              1077770193,
+              1011172923,
+              410066004,
+              923055436,
+              944561278,
+              339823483,
+              369480411,
+              1078670081,
+              487017668,
+              428221867,
+              923655527,
+              955896092,
+              1390991509,
+              841003550,
+              947233460,
+              403025047,
+              937643242,
+              375373132,
+              947827280,
+              1038002766,
+              889251611,
+              1056997607,
+              332052828,
+              449879794,
+              1130719725,
+              459855271,
+              1138764143,
+              1145659198,
+              1036324074,
+              463936459,
+              938065770,
+              896375036,
+              386576768,
+              411462820,
+              922763880,
+              344682862,
+              1026716237,
+              1013829982,
+              970559946,
+              1205140565,
+              956320570,
+              852427432,
+              377933573,
+              923426960,
+              413675420,
+              954717426,
+              1088391852,
+              910021277,
+              500986211,
+              513711881,
+              538777274,
+              1300142485,
+              606688227,
+              1227565576,
+              1051906973,
+              950454524,
+              669208299,
+              958765030,
+              1013257992,
+              936499634,
+              950007141
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 13,
+            pendingRequests: 5,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:06:40.378Z",
+            scenariosCreated: 50,
+            scenariosCompleted: 50,
+            requestsCompleted: 77,
+            latency: {
+              min: 336,
+              max: 1439.7,
+              median: 884.1,
+              p95: 1274.6,
+              p99: 1416
+            },
+            rps: {
+              count: 78,
+              mean: 7.82
+            },
+            scenarioDuration: {
+              min: 1869.3,
+              max: 3830.5,
+              median: 2662.3,
+              p95: 3471.2,
+              p99: 3830.5
+            },
+            scenarioCounts: {
+              "Detail Pages": 26,
+              Scorecard: 20,
+              "Home Page": 4
+            },
+            errors: {},
+            codes: {
+              "200": 77
+            },
+            matches: 0,
+            latencies: [
+              410497332,
+              1006175981,
+              884348889,
+              950723542,
+              382117606,
+              403851539,
+              508713690,
+              1248034592,
+              774937121,
+              1061604122,
+              1276094262,
+              917249906,
+              845917469,
+              1044417999,
+              979581233,
+              365039338,
+              950500711,
+              1150353917,
+              355304638,
+              1160055099,
+              495796429,
+              1090469644,
+              979154041,
+              848951021,
+              365560814,
+              1239050013,
+              877651213,
+              849816702,
+              361155680,
+              986206905,
+              872254381,
+              462897368,
+              1010383767,
+              961648261,
+              540274553,
+              870500311,
+              516668921,
+              976783558,
+              917724786,
+              963453852,
+              460466665,
+              899023269,
+              868321907,
+              406284183,
+              377281738,
+              865661971,
+              890300943,
+              358131916,
+              884125762,
+              1296683206,
+              454187250,
+              915585411,
+              1352000782,
+              947339054,
+              1013668246,
+              433139310,
+              963629990,
+              353563875,
+              1080491523,
+              512691816,
+              498340195,
+              859479253,
+              365970635,
+              1439724568,
+              1271812964,
+              889243267,
+              336030370,
+              963853297,
+              988372298,
+              890790730,
+              944369793,
+              360896238,
+              380809763,
+              1006771744,
+              349494373,
+              856213562,
+              373694718
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 13,
+            pendingRequests: 6,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:06:50.391Z",
+            scenariosCreated: 50,
+            scenariosCompleted: 48,
+            requestsCompleted: 71,
+            latency: {
+              min: 315.7,
+              max: 1553,
+              median: 901.2,
+              p95: 1257.5,
+              p99: 1523.1
+            },
+            rps: {
+              count: 71,
+              mean: 7.11
+            },
+            scenarioDuration: {
+              min: 1942.5,
+              max: 3628.6,
+              median: 2682.6,
+              p95: 3276.5,
+              p99: 3628.6
+            },
+            scenarioCounts: {
+              Scorecard: 19,
+              "Home Page": 4,
+              "Detail Pages": 27
+            },
+            errors: {},
+            codes: {
+              "200": 71
+            },
+            matches: 0,
+            latencies: [
+              1258878467,
+              877388836,
+              515617016,
+              991392170,
+              883249993,
+              1410359207,
+              947341505,
+              960560279,
+              346756764,
+              877835611,
+              329010335,
+              940951962,
+              406884025,
+              964284046,
+              899191228,
+              897658413,
+              940782648,
+              862359777,
+              909939579,
+              913269714,
+              959290031,
+              419029613,
+              1006998771,
+              475595856,
+              920548920,
+              1003952613,
+              892894433,
+              847660747,
+              886744961,
+              454335081,
+              1024247112,
+              374547710,
+              979443452,
+              514268768,
+              402915271,
+              398515669,
+              901184367,
+              1232188486,
+              1042035456,
+              988863162,
+              905116865,
+              1045396746,
+              605284756,
+              1098686219,
+              939584366,
+              830213058,
+              350055745,
+              905623718,
+              485776508,
+              879470813,
+              920632671,
+              849387232,
+              349440870,
+              937348585,
+              1016246947,
+              895862775,
+              327986680,
+              986939933,
+              401569086,
+              973613469,
+              315720951,
+              420439134,
+              945631451,
+              1553043270,
+              1352501226,
+              1007506656,
+              901502125,
+              872493312,
+              694582827,
+              958913668,
+              374415371
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 15,
+            pendingRequests: 6,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:07:00.389Z",
+            scenariosCreated: 50,
+            scenariosCompleted: 49,
+            requestsCompleted: 80,
+            latency: {
+              min: 327.1,
+              max: 1923,
+              median: 919.3,
+              p95: 1482.3,
+              p99: 1827.7
+            },
+            rps: {
+              count: 84,
+              mean: 8.43
+            },
+            scenarioDuration: {
+              min: 2145.9,
+              max: 4112.8,
+              median: 3079.6,
+              p95: 3908,
+              p99: 4112.8
+            },
+            scenarioCounts: {
+              "Detail Pages": 30,
+              Scorecard: 12,
+              "Home Page": 8
+            },
+            errors: {},
+            codes: {
+              "200": 80
+            },
+            matches: 0,
+            latencies: [
+              851810312,
+              1285036890,
+              744133259,
+              965681057,
+              391255816,
+              984087108,
+              869061617,
+              920768641,
+              539261783,
+              511091110,
+              757288768,
+              641866949,
+              1335923774,
+              968411894,
+              854771945,
+              1479464282,
+              977986760,
+              405497892,
+              422805849,
+              1012535731,
+              930325288,
+              359591194,
+              1046284079,
+              469561224,
+              393744658,
+              1065192202,
+              1012050397,
+              941713525,
+              441034538,
+              1172223673,
+              1060573156,
+              407581806,
+              1064729719,
+              1028743633,
+              327145727,
+              343778191,
+              531787983,
+              430070520,
+              1315631568,
+              391920024,
+              1510184452,
+              1131835325,
+              1358025769,
+              1136844022,
+              953805612,
+              964054897,
+              878237305,
+              485974982,
+              511172899,
+              514481469,
+              999143378,
+              347857914,
+              1287896211,
+              917907575,
+              1140038647,
+              619841845,
+              1097061843,
+              931255516,
+              933464634,
+              482075993,
+              436714438,
+              527370033,
+              1203756715,
+              1605443254,
+              1485187527,
+              381039597,
+              1046915320,
+              637400358,
+              1046550849,
+              432364442,
+              991194902,
+              897070862,
+              1922973450,
+              942420219,
+              850325026,
+              386973325,
+              877528199,
+              338466297,
+              946946366,
+              440919329
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 16,
+            pendingRequests: 10,
+            scenariosAvoided: 0
+          },
+          {
+            timestamp: "2021-03-18T21:07:05.406Z",
+            scenariosCreated: 6,
+            scenariosCompleted: 22,
+            requestsCompleted: 25,
+            latency: {
+              min: 341.4,
+              max: 2544,
+              median: 854.3,
+              p95: 2232.2,
+              p99: 2544
+            },
+            rps: {
+              count: 15,
+              mean: 3.01
+            },
+            scenarioDuration: {
+              min: 1948.5,
+              max: 5156.2,
+              median: 3490.7,
+              p95: 4893.6,
+              p99: 5156.2
+            },
+            scenarioCounts: {
+              "Detail Pages": 4,
+              "Home Page": 1,
+              Scorecard: 1
+            },
+            errors: {},
+            codes: {
+              "200": 25
+            },
+            matches: 0,
+            latencies: [
+              2128239293,
+              1221766732,
+              672149617,
+              743220530,
+              1215705685,
+              568705457,
+              382935537,
+              1055803120,
+              1041825481,
+              854268584,
+              2544046714,
+              1013327960,
+              1980465956,
+              989014223,
+              472389236,
+              1175637511,
+              1075775629,
+              1917587108,
+              363569604,
+              341417613,
+              349814070,
+              429359742,
+              351913530,
+              605922508,
+              721992044
+            ],
+            customStats: {},
+            counters: {},
+            concurrency: 0,
+            pendingRequests: 0,
+            scenariosAvoided: 0
+          }
+        ]
+      };
+    </script>
+
+    <style>
+      h1 {
+        line-height: 200%;
+      }
+
+      body {
+        background-color: #fcfcfc;
+      }
+
+      .container {
+        width: 100%;
+        min-width: 960px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" id="header">
+        <div class="col-lg-4 col-lg-offset-4">
+          <pre style="font-size: 5pt; background-color: #fcfcfc; border: none;">
+            _   _ _ _                                                _
+  __ _ _ __| |_(_) | | ___ _ __ _   _      _ __ ___ _ __   ___  _ __| |_
+ / _` | '__| __| | | |/ _ \ '__| | | |    | '__/ _ \ '_ \ / _ \| '__| __|
+| (_| | |  | |_| | | |  __/ |  | |_| |    | | |  __/ |_) | (_) | |  | |_
+ \__,_|_|   \__|_|_|_|\___|_|   \__, |    |_|  \___| .__/ \___/|_|   \__|
+                                |___/              |_|
+
+    </pre
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center" id="page-title">Test run on <span id="timestamp">date</span></h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <p><strong>Summary</strong></p>
+          <table class="table table-bordered table-hover table-condensed">
+            <tbody>
+              <tr>
+                <td>Test duration</td>
+                <td><span id="testDuration">0</span> sec</td>
+              </tr>
+              <tr>
+                <td>Scenarios created</td>
+                <td><span id="scenariosCreated">0</span></td>
+              </tr>
+
+              <tr>
+                <td>Scenarios completed</td>
+                <td><span id="scenariosCompleted">0</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-lg-5" id="scenarioCountsContainer">
+          <div>
+            <strong>Scenario counts:</strong>
+
+            <p></p>
+
+            <table class="table table-bordered table-hover table-condensed" id="scenarioCounts"></table>
+          </div>
+        </div>
+
+        <div class="col-lg-1">
+          <div id="codesContainer">
+            <strong>Codes</strong>
+
+            <p></p>
+
+            <table class="table table-bordered table-hover table-condensed" id="codes"></table>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div id="errorsContainer">
+            <strong>Errors</strong>
+
+            <p></p>
+
+            <table class="table table-bordered table-hover table-condensed" id="errors"></table>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="text-center col-lg-12">
+          <h2>Charts</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="latency-histogram text-center col-lg-12"></div>
+      </div>
+
+      <div class="row">
+        <div class="latency text-center col-lg-12"></div>
+      </div>
+
+      <div class="latency-legend"></div>
+
+      <div class="row"></div>
+
+      <div class="row">
+        <div class="concurrency text-center col-lg-12"></div>
+      </div>
+
+      <div class="row">
+        <div class="rps-mean text-center col-lg-12"></div>
+      </div>
+      <div class="row">
+        <div class="rps-count text-center col-lg-12"></div>
+      </div>
+
+      <div class="row">
+        <div class="codes-line text-center col-lg-12"></div>
+      </div>
+      <div class="row">
+        <div class="errors-line text-center col-lg-12"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h3 class="text-center">Raw report data</h3>
+        <p>This is the raw JSON stats output that the report was generated from.</p>
+        <div id="editor"></div>
+      </div>
+    </div>
+
+    <script>
+      var editor = ace.edit("editor");
+      editor.getSession().setMode("ace/mode/javascript");
+      editor.setValue(JSON.stringify(Report, null, 2));
+      editor.gotoLine(1);
+      editor.setHighlightActiveLine(false);
+
+      var l = _;
+
+      $("#timestamp").html(moment(Report.aggregate.timestamp).format("DD MMM YYYY HH:mm:SS"));
+      $("#testDuration").html(l.size(Report.intermediate) * 10);
+      $("#scenariosCompleted").html(Report.aggregate.scenariosCompleted);
+      $("#scenariosCreated").html(Report.aggregate.scenariosCreated);
+
+      var markers = [];
+      if (l.size(Report.phases) > 0) {
+        markers = l.foldl(
+          Report.phases,
+          function(acc, phase, index) {
+            var label = phase.name || "Phase " + (index + 1);
+            var timestamp = index === 0 ? 0 : Report.phases[index - 1].duration + acc[index - 1].timestamp;
+
+            acc.push({
+              timestamp: timestamp,
+              label: label
+            });
+
+            return acc;
+          },
+          []
+        );
+      }
+
+      if (l.size(Report.aggregate.scenarioCounts) > 0) {
+        l.each(Report.aggregate.scenarioCounts, function(count, name) {
+          var $tdName = $("<td>" + name + "</td>");
+          var percentage = Math.round((count / Report.aggregate.scenariosCreated) * 100 * 1000) / 1000;
+          var $tdCount = $("<td>" + count + " (" + percentage + "%)" + "</td>");
+          var $el = $("<tr></tr>")
+            .append($tdName)
+            .append($tdCount)
+            .appendTo($("#scenarioCounts"));
+        });
+      } else {
+        $("#scenarioCountsContainer").hide();
+      }
+
+      if (l.size(Report.aggregate.codes) > 0) {
+        l.each(Report.aggregate.codes, function(count, code) {
+          var anchor = "";
+          if (code >= 100 && code < 200) {
+            anchor = "#1xx_Informational";
+          } else if (code >= 200 && code < 300) {
+            anchor = "#2xx_Success";
+          } else if (code >= 300 && code < 400) {
+            anchor = "#3xx_Redirection";
+          } else if (code >= 400 && code < 500) {
+            anchor = "#4xx_Client_Error";
+          } else if (code >= 500 && code < 600) {
+            anchor = "#5xx_Server_Error";
+          }
+
+          var $a = $("<a>" + code + "</a>").attr("href", "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" + anchor);
+          var $td = $("<td></td>").append($a);
+          var $el = $("<tr></tr>")
+            .append($td)
+            .append($("<td>" + count + "</td>"))
+            .appendTo($("#codes"));
+        });
+      } else {
+        $("#codesContainer").hide();
+      }
+
+      if (l.size(Report.aggregate.errors) > 0) {
+        l.each(Report.aggregate.errors, function(count, code) {
+          var $el = $("<tr></tr>")
+            .append($("<td>" + code + "</td>"))
+            .append($("<td>" + count + "</td>"))
+            .appendTo($("#errors"));
+        });
+      } else {
+        $("#errorsContainer > p").html("&#10004; Test completed without network or OS errors.");
+      }
+
+      var histogramData = l.map(Report.aggregate.latency, function(v, k) {
+        return { bin: k, value: v };
+      });
+
+      MG.data_graphic({
+        chart_type: "bar",
+        x_label: "Percentile",
+        y_label: "(ms)",
+        animate_on_load: true,
+        title: "Overall Latency Distribution",
+        description: "Distribution of all observed response latencies",
+        target: ".latency-histogram",
+        data: histogramData,
+        x_accessor: "bin",
+        y_accessor: "value",
+        binned: true,
+        height: 250,
+        interpolate: "monotone",
+        padding_percentage: 0,
+        bar_orientation: "vertical",
+        width: 450
+      });
+
+      var chartData = l.map(window.Report.intermediate, function(o, i) {
+        return {
+          timestamp: i * 10 + 10,
+
+          rpsMean: o.rps.mean,
+          rpsCount: o.rps.count,
+          concurrency: o.concurrency,
+          latencyMax: o.latency.max,
+          latencyp99: o.latency.p99,
+          latencyp95: o.latency.p95,
+          latencyMedian: o.latency.median,
+          latencyMin: o.latency.min
+        };
+      });
+
+      //
+      // Response codes
+      //
+
+      if (l.size(Report.aggregate.codes) > 0) {
+        var codesData = l.foldl(
+          Report.intermediate,
+          function(acc, o, i) {
+            var res = {};
+            res.timestamp = i * 10 + 10;
+            l.each(o.codes, function(count, code) {
+              res[code] = count;
+            });
+            acc.push(res);
+            return acc;
+          },
+          []
+        );
+        var uniqueCodes = l.foldl(
+          Report.intermediate,
+          function(acc, o) {
+            l.each(o.codes, function(count, code) {
+              if (l.indexOf(acc, code) === -1) {
+                acc.push(code);
+              }
+            });
+            return acc;
+          },
+          []
+        );
+
+        MG.data_graphic({
+          x_label: "Time",
+          y_label: "Count",
+          title: "HTTP codes",
+          description: "Occurence of HTTP response codes",
+          target: ".codes-line",
+          data: codesData,
+          x_accessor: "timestamp",
+          y_accessor: uniqueCodes,
+          legend: uniqueCodes,
+          right: 50,
+          chart_type: "line",
+          area: false,
+          markers: markers,
+          width: 900
+        });
+      }
+
+      //
+      // Errors
+      //
+
+      if (l.size(Report.aggregate.errors) > 0) {
+        var errorData = l.foldl(
+          Report.intermediate,
+          function(acc, o, i) {
+            var res = {};
+            res.timestamp = i * 10 + 10;
+            l.each(o.errors, function(count, name) {
+              res[name] = count;
+            });
+            acc.push(res);
+            return acc;
+          },
+          []
+        );
+        var uniqueErrors = l.foldl(
+          Report.intermediate,
+          function(acc, o) {
+            l.each(o.errors, function(count, name) {
+              if (l.indexOf(acc, name) === -1) {
+                acc.push(name);
+              }
+            });
+            return acc;
+          },
+          []
+        );
+
+        MG.data_graphic({
+          title: "Error Codes",
+          description: "Occurence of error codes",
+          target: ".errors-line",
+          data: errorData,
+          x_accessor: "timestamp",
+          y_accessor: uniqueErrors,
+          chart_type: "line",
+          area: false,
+          markers: markers
+        });
+      }
+
+      //
+      // Latency
+      //
+      MG.data_graphic({
+        chart_type: "line",
+        x_label: "Time",
+        y_label: "(ms)",
+        animate_on_load: true,
+        area: false,
+        title: "Latency At Intervals",
+        description: "Latency values at different points during the test run",
+        data: chartData,
+        target: ".latency",
+        width: 900,
+        x_accessor: "timestamp",
+        y_accessor: ["latencyMin", "latencyMedian", "latencyp95", "latencyMax"],
+        legend: ["min", "p50", "p95", "max"],
+        //legend_target: '.latency-legend',
+        right: 50,
+        interpolate: "monotone",
+        mouseover: function(d, i) {},
+        markers: markers
+      });
+
+      MG.data_graphic({
+        animate_on_load: true,
+        area: false,
+        y_label: "Count",
+        x_label: "Time",
+        title: "Concurrent users",
+        description: "Concurrent users",
+        data: chartData,
+        target: ".concurrency",
+        x_accessor: "timestamp",
+        y_accessor: ["concurrency"],
+        interpolate: "monotone",
+        markers: markers,
+        width: 900
+      });
+
+      MG.data_graphic({
+        animate_on_load: true,
+        area: false,
+        y_label: "Count",
+        x_label: "Time",
+        title: "Mean RPS",
+        description: "Mean requests per second",
+        data: chartData,
+        target: ".rps-mean",
+        x_accessor: "timestamp",
+        y_accessor: ["rpsMean"],
+        interpolate: "monotone",
+        markers: markers,
+        width: 900
+      });
+
+      MG.data_graphic({
+        animate_on_load: true,
+        area: false,
+        y_label: "Count",
+        x_label: "Time",
+        title: "RPS Count",
+        description: "Count of requests per second",
+        data: chartData,
+        target: ".rps-count",
+        x_accessor: "timestamp",
+        y_accessor: ["rpsCount"],
+        interpolate: "monotone",
+        markers: markers,
+        width: 900
+      });
+    </script>
+    <div id="footer">
+      <footer>
+        This report was created with <a href="https://artillery.io">Artillery</a> - free open-source load-testing for HTTP and WebSockets
+      </footer>
+    </div>
+  </body>
+</html>

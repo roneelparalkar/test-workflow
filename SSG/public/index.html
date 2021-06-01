@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lockdown Cricket Admin</title>
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <script src="/assets/scripts/login.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="card-body"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="main-card mb-3 card">
+                <div class="card-body">
+                    <h5 class="card-title">Login</h5>
+                    <form id="loginForm" class="needs-validation" onsubmit="event.preventDefault(); validateMyForm();" novalidate>
+                        <div class="position-relative form-group">
+                            <label for="username" class="">Username</label>
+                            <input name="username" id="username" placeholder="Enter username" type="username" class="form-control" required>
+                        </div>
+                        <div class="position-relative form-group">
+                            <label for="password" class="">Password</label>
+                            <input name="password" id="password" placeholder="Enter password" type="password" class="form-control" required>
+                        </div>
+                        <button class="mt-1 btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="toasterMessage" style="display: none;">
+            <div>
+                <div id="toast-container" class="toast-top-right">
+                    <div class="toast toast-error rtl" aria-live="assertive" style="opacity: 0.6552;">
+                        <div class="toast-title"></div>
+                        <div class="toast-message" id="toast-message">Invalid Username or Password</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

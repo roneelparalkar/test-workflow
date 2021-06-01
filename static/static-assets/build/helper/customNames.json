@@ -1,0 +1,1305 @@
+{
+  "teams": {
+    "cricket": {
+      "1": {
+        "custom_name": "Australia",
+        "custom_short_name": "AUS"
+      },
+      "2": {
+        "custom_name": "Bangladesh",
+        "custom_short_name": "BAN"
+      },
+      "3": {
+        "custom_name": "England",
+        "custom_short_name": "ENG"
+      },
+      "4": {
+        "custom_name": "India",
+        "custom_short_name": "IND"
+      },
+      "5": {
+        "custom_name": "New Zealand",
+        "custom_short_name": "NZ"
+      },
+      "6": {
+        "custom_name": "Pakistan",
+        "custom_short_name": "PAK"
+      },
+      "7": {
+        "custom_name": "South Africa",
+        "custom_short_name": "SA"
+      },
+      "8": {
+        "custom_name": "Sri Lanka",
+        "custom_short_name": "SL"
+      },
+      "9": {
+        "custom_name": "West Indies",
+        "custom_short_name": "WI"
+      },
+      "10": {
+        "custom_name": "Zimbabwe",
+        "custom_short_name": "ZIM"
+      },
+      "16": {
+        "custom_name": "Scotland",
+        "custom_short_name": "SCO"
+      },
+      "21": {
+        "custom_name": "United Arab Emirates",
+        "custom_short_name": "UAE"
+      },
+      "23": {
+        "custom_name": "ICC World XI",
+        "custom_short_name": "WRL"
+      },
+      "282": {
+        "custom_name": "Essex",
+        "custom_short_name": "Essex"
+      },
+      "289": {
+        "custom_name": "England XI",
+        "custom_short_name": "ENG XI"
+      },
+      "395": {
+        "custom_name": "India A",
+        "custom_short_name": "IND A"
+      },
+      "1105": {
+        "custom_name": "Bangalore",
+        "custom_short_name": "Bangalore"
+      },
+      "1106": {
+        "custom_name": "Kolkata",
+        "custom_short_name": "Kolkata"
+      },
+      "1107": {
+        "custom_name": "Punjab",
+        "custom_short_name": "Punjab"
+      },
+      "1108": {
+        "custom_name": "Chennai",
+        "custom_short_name": "Chennai"
+      },
+      "1109": {
+        "custom_name": "Delhi",
+        "custom_short_name": "Delhi"
+      },
+      "1110": {
+        "custom_name": "Rajasthan",
+        "custom_short_name": "Rajasthan"
+      },
+      "1111": {
+        "custom_name": "Mumbai",
+        "custom_short_name": "Mumbai"
+      },
+      "1119": {
+        "custom_name": "Australia Women",
+        "custom_short_name": "AUS-W"
+      },
+      "1121": {
+        "custom_name": "England Women",
+        "custom_short_name": "ENG-W"
+      },
+      "1126": {
+        "custom_name": "India Women",
+        "custom_short_name": "IND-W"
+      },
+      "1129": {
+        "custom_name": "New Zealand Women",
+        "custom_short_name": "NZ-W"
+      },
+      "1130": {
+        "custom_name": "Pakistan Women",
+        "custom_short_name": "PAK-W"
+      },
+      "1131": {
+        "custom_name": "South Africa Women",
+        "custom_short_name": "SA-W"
+      },
+      "1133": {
+        "custom_name": "Sri Lanka Women",
+        "custom_short_name": "SL-W"
+      },
+      "1135": {
+        "custom_name": "West Indies Women",
+        "custom_short_name": "WI-W"
+      },
+      "1379": {
+        "custom_name": "Hyderabad",
+        "custom_short_name": "Hyderabad"
+      },
+      "1508": {
+        "custom_name": "Supergiant",
+        "custom_short_name": "PUN"
+      },
+      "1527": {
+        "custom_name": "Ruby Trichy Warriors",
+        "custom_short_name": "Warriors"
+      },
+      "1523": {
+        "custom_name": "Jones Tuti Patriots",
+        "custom_short_name": "Patriots"
+      },
+      "1528": {
+        "custom_name": "Dindigul Dragons",
+        "custom_short_name": "Dragons"
+      },
+      "1525": {
+        "custom_name": "Lyca Kovai Kings",
+        "custom_short_name": "Kings"
+      },
+      "1530": {
+        "custom_name": "IDream Karaikudi Kaalai",
+        "custom_short_name": "Kaalai"
+      },
+      "1524": {
+        "custom_name": "Chepauk Super Gillies",
+        "custom_short_name": "Gillies"
+      },
+      "1529": {
+        "custom_name": "VB Kanchi Veerans",
+        "custom_short_name": "Veerans"
+      },
+      "1601": {
+        "custom_name": "Bengaluru Blasters",
+        "custom_short_name": "Blasters"
+      },
+      "1488": {
+        "custom_name": "Belagavi Panthers",
+        "custom_short_name": "Panthers"
+      },
+      "1493": {
+        "custom_name": "Hubli Tigers",
+        "custom_short_name": "Tigers"
+      },
+      "1491": {
+        "custom_name": "Bijapur Bulls",
+        "custom_short_name": "Bulls"
+      },
+      "1492": {
+        "custom_name": "Bellary Tuskers",
+        "custom_short_name": "Tuskers"
+      },
+      "1490": {
+        "custom_name": "Namma Shivamogga",
+        "custom_short_name": "Shivamogga"
+      },
+      "1489": {
+        "custom_name": "Mysuru Warriors",
+        "custom_short_name": "Warriors"
+      },
+      "1276": {
+        "custom_name": "Bangladesh",
+        "custom_short_name": "BAN"
+      },
+      "1125": {
+        "custom_name": "Ireland",
+        "custom_short_name": "IRE"
+      },
+      "1526": {
+        "custom_name": "Siechem Madurai Panthers",
+        "custom_short_name": "Panthers"
+      },
+      "1645": {
+        "custom_name": "Vancouver Knights",
+        "custom_short_name": "Knights"
+      },
+      "1649": {
+        "custom_name": "CWI B Team",
+        "custom_short_name": "WI B"
+      },
+      "1647": {
+        "custom_name": "Winnipeg Hawks",
+        "custom_short_name": "Hawks"
+      },
+      "1648": {
+        "custom_name": "Edmonton Royals",
+        "custom_short_name": "Royals"
+      },
+      "1646": {
+        "custom_name": "Montreal Tigers",
+        "custom_short_name": "Tigers"
+      },
+      "1927": {
+        "custom_name": "Brampton Wolves",
+        "custom_short_name": "Wolves"
+      },
+      "1644": {
+        "custom_name": "Toronto Nationals",
+        "custom_short_name": "Nationals"
+      },
+      "1408": {
+        "custom_name": "Trinbago Knight Riders",
+        "custom_short_name": "Knight Riders"
+      },
+      "1406": {
+        "custom_name": "St Lucia Zouks",
+        "custom_short_name": "Zouks"
+      },
+      "1407": {
+        "custom_name": "Guyana Amazon Warriors",
+        "custom_short_name": "Warriors"
+      },
+      "1480": {
+        "custom_name": "St Kitts and Nevis Patriots",
+        "custom_short_name": "Patriots"
+      },
+      "1410": {
+        "custom_name": "Jamaica Tallawahs",
+        "custom_short_name": "Tallawahs"
+      },
+      "1405": {
+        "custom_name": "Tridents",
+        "custom_short_name": "Tridents"
+      },
+      "415": {
+        "custom_name": "India Red",
+        "custom_short_name": "India Red"
+      },
+      "407": {
+        "custom_name": "India Green",
+        "custom_short_name": "India Green"
+      },
+      "400": {
+        "custom_name": "India Blue",
+        "custom_short_name": "India Blue"
+      },
+
+      "1509": {
+        "custom_name": "Gujarat",
+        "custom_short_name": "GUJ"
+      },
+      "1684": {
+        "custom_name": "Paarl Rocks",
+        "custom_short_name": "Paarl Rocks"
+      },
+      "1683": {
+        "custom_name": "Durban Heat",
+        "custom_short_name": "Durban Heat"
+      },
+      "1682": {
+        "custom_name": "Nelson Mandela Bay Giants",
+        "custom_short_name": "NMB Giants"
+      },
+      "1681": {
+        "custom_name": "Jozi Stars",
+        "custom_short_name": "Jozi Stars"
+      },
+      "1680": {
+        "custom_name": "Tshwane Spartans",
+        "custom_short_name": "Tshwane Spartans"
+      },
+      "1279": {
+        "custom_name": "Chittagong Vikings",
+        "custom_short_name": "Chittagong"
+      },
+      "1382": {
+        "custom_name": "Rangpur Riders",
+        "custom_short_name": "Rangpur"
+      },
+      "1498": {
+        "custom_name": "Dhaka Dynamites",
+        "custom_short_name": "Dhaka"
+      },
+      "1533": {
+        "custom_name": "Rajshahi Kings",
+        "custom_short_name": "Rajshahi"
+      },
+      "1534": {
+        "custom_name": "Khulna Titans",
+        "custom_short_name": "Khulna"
+      },
+      "1499": {
+        "custom_name": "Comilla Victorians",
+        "custom_short_name": "Comilla"
+      },
+      "1317": {
+        "custom_name": "Sylhet Sixers",
+        "custom_short_name": "Sylhet"
+      },
+      "1639": {
+        "custom_name": "Supernovas",
+        "custom_short_name": "Supernovas"
+      },
+      "1640": {
+        "custom_name": "Trailblazers",
+        "custom_short_name": "Trailblazers"
+      },
+      "1907": {
+        "custom_name": "Velocity",
+        "custom_short_name": "Velocity"
+      },
+      "1172": {
+        "custom_name": "South Africa Under-19",
+        "custom_short_name": "SA U19"
+      },
+      "1143": {
+        "custom_name": "Afghanistan Under-19",
+        "custom_short_name": "AFG U19"
+      },
+      "1154": {
+        "custom_name": "Australia Under-19",
+        "custom_short_name": "AUS U19"
+      },
+      "1176": {
+        "custom_name": "West Indies Under-19",
+        "custom_short_name": "WI U19"
+      },
+      "1155": {
+        "custom_name": "Bangladesh Under-19",
+        "custom_short_name": "BAN U19"
+      },
+      "1177": {
+        "custom_name": "Zimbabwe Under-19",
+        "custom_short_name": "ZIM u19"
+      },
+      "1169": {
+        "custom_name": "New Zealand Under-19",
+        "custom_short_name": "NZ U19"
+      },
+      "2004": {
+        "custom_name": "Japan Under-19",
+        "custom_short_name": "JAPU U19"
+      },
+      "1448": {
+        "custom_name": "United Arab Emirates Under-19",
+        "custom_short_name": "UAE U19"
+      },
+      "1147": {
+        "custom_name": "Canada Under-19",
+        "custom_short_name": "CAN U19"
+      },
+      "1163": {
+        "custom_name": "India Under-19",
+        "custom_short_name": "IND U19"
+      },
+      "1165": {
+        "custom_name": "Sri Lanka Under-19",
+        "custom_short_name": "SL U19"
+      },
+      "1170": {
+        "custom_name": "Pakistan Under-19",
+        "custom_short_name": "PAK U19"
+      },
+      "1173": {
+        "custom_name": "Scotland Under-19",
+        "custom_short_name": "SCO U19"
+      },
+      "2003": {
+        "custom_name": "Nigeria Under-19",
+        "custom_short_name": "NIGU U19"
+      },
+      "1159": {
+        "custom_name": "England Under-19",
+        "custom_short_name": "ENG U19"
+      },
+      "2177": {
+        "custom_name": "Hsinchu Titans",
+        "custom_short_name": "Titans"
+      },
+      "2178": {
+        "custom_name": "Taiwan Daredevils",
+        "custom_short_name": "Daredevils"
+      },
+      "2179": {
+        "custom_name": "TCA Indians",
+        "custom_short_name": "Indians"
+      },
+      "2180": {
+        "custom_name": "Chiayi Swingers",
+        "custom_short_name": "Swingers"
+      },
+      "2181": {
+        "custom_name": "PCCT United",
+        "custom_short_name": "United"
+      },
+      "2182": {
+        "custom_name": "ICCT Samshers",
+        "custom_short_name": "Samshers"
+      },
+      "2183": {
+        "custom_name": "Taiwan Dragons",
+        "custom_short_name": "Dragons"
+      },
+      "2184": {
+        "custom_name": "FCC Formosans",
+        "custom_short_name": "Formosans"
+      },
+      "2194": {
+        "custom_name": "Grenadines Divers",
+        "custom_short_name": "Divers"
+      },
+      "2195": {
+        "custom_name": "Salt Pond Breakers",
+        "custom_short_name": "Breakers"
+      },
+      "2196": {
+        "custom_name": "La Soufriere Hikers",
+        "custom_short_name": "Hikers"
+      },
+      "2197": {
+        "custom_name": "Botanic Garden Rangers",
+        "custom_short_name": "Rangers"
+      },
+      "2198": {
+        "custom_name": "Dark View Explorers",
+        "custom_short_name": "Explorers"
+      },
+      "2199": {
+        "custom_name": "Fort Charlotte Strikers",
+        "custom_short_name": "Strikers"
+      },
+      "2200": {
+        "custom_name": "MT Bulls",
+        "custom_short_name": "Bulls"
+      },
+      "2201": {
+        "custom_name": "Mighty Efate Panthers",
+        "custom_short_name": "Panthers"
+      },
+      "2202": {
+        "custom_name": "Ifira Sharks",
+        "custom_short_name": "Sharks"
+      },
+      "2203": {
+        "custom_name": "President XI",
+        "custom_short_name": "President XI"
+      },
+      "2204": {
+        "custom_name": "Alby Zalmi CC",
+        "custom_short_name": "Zalmi"
+      },
+      "2205": {
+        "custom_name": "Djurgardens IF Cricketforening",
+        "custom_short_name": "Djurgardens"
+      },
+      "2206": {
+        "custom_name": "Pakistanska Foreningen",
+        "custom_short_name": "Pakistanska"
+      },
+      "2207": {
+        "custom_name": "Stockholm CC",
+        "custom_short_name": "Stockholm"
+      },
+      "2208": {
+        "custom_name": "Sigtuna CC",
+        "custom_short_name": "Sigtuna"
+      },
+      "2209": {
+        "custom_name": "Indiska CC",
+        "custom_short_name": "Indiska"
+      },
+      "2216": {
+        "custom_name": "Darwin Cricket Club",
+        "custom_short_name": "Darwin"
+      },
+      "2217": {
+        "custom_name": "Nightcliff Cricket Club",
+        "custom_short_name": "Nightcliff"
+      },
+      "2218": {
+        "custom_name": "Palmerston Cricket Club",
+        "custom_short_name": "Palmerston"
+      },
+      "2219": {
+        "custom_name": "Pint Cricket Club INC",
+        "custom_short_name": "Pint"
+      },
+      "2220": {
+        "custom_name": "Southern Districts CC",
+        "custom_short_name": "Southern"
+      },
+      "2221": {
+        "custom_name": "Tracy Village CC",
+        "custom_short_name": "Tracy"
+      },
+      "2222": {
+        "custom_name": "Waratah Cricket Club",
+        "custom_short_name": "Waratah"
+      },
+      "2225": {
+        "custom_name": "Helsinki Cricket Club",
+        "custom_short_name": "Helsinki"
+      },
+      "2226": {
+        "custom_name": "Vantaa CC",
+        "custom_short_name": "Vantaa"
+      },
+      "2227": {
+        "custom_name": "Bengal Tigers CC",
+        "custom_short_name": "Tigers"
+      },
+      "2228": {
+        "custom_name": "Empire CC",
+        "custom_short_name": "Empire"
+      },
+      "2229": {
+        "custom_name": "Greater Helsinki CC",
+        "custom_short_name": "GR Hesa"
+      },
+      "2230": {
+        "custom_name": "GYM Helsinki Gymkhana",
+        "custom_short_name": "GYM Hesa"
+      },
+      "2231": {
+        "custom_name": "FPC Finnish Pakistani Club",
+        "custom_short_name": "Pak Club"
+      },
+      "2232": {
+        "custom_name": "SKK Stadin ja Keravan Kriketti",
+        "custom_short_name": "Kerava"
+      },
+      "2233": {
+        "custom_name": "Club 71",
+        "custom_short_name": "Club 71"
+      },
+      "2234": {
+        "custom_name": "Otaniemi Cricket Club",
+        "custom_short_name": "Otaniemi"
+      },
+      "2235": {
+        "custom_name": "Stockholm Mumbai Indians",
+        "custom_short_name": "Stockholm MI"
+      },
+      "2236": {
+        "custom_name": "Prague Barbarians Visigoths",
+        "custom_short_name": "Barbarians"
+      },
+      "2237": {
+        "custom_name": "United CC",
+        "custom_short_name": "United"
+      },
+      "2238": {
+        "custom_name": "Bohemian CC",
+        "custom_short_name": "Bohemian"
+      },
+      "2239": {
+        "custom_name": "Prague CC Kings",
+        "custom_short_name": "Kings"
+      },
+      "2240": {
+        "custom_name": "DDCC Invitational XI",
+        "custom_short_name": "Invitational XI"
+      },
+      "2241": {
+        "custom_name": "KSV Cricket",
+        "custom_short_name": "KSV"
+      },
+      "2242": {
+        "custom_name": "PSV Hann Munden",
+        "custom_short_name": "PSV"
+      },
+      "2243": {
+        "custom_name": "SC Europa Cricket",
+        "custom_short_name": "SC Europa"
+      },
+      "2244": {
+        "custom_name": "MTV Stallions",
+        "custom_short_name": "Stallions"
+      },
+      "2245": {
+        "custom_name": "Kista Cricket Club",
+        "custom_short_name": "Kista"
+      },
+      "2246": {
+        "custom_name": "Ludhiana Lions",
+        "custom_short_name": "Ludhiana"
+      },
+      "2247": {
+        "custom_name": "Patiala Panthers",
+        "custom_short_name": "Patiala"
+      },
+      "2248": {
+        "custom_name": "Moga Mongoose",
+        "custom_short_name": "Moga"
+      },
+      "2249": {
+        "custom_name": "Firozpur Falcons",
+        "custom_short_name": "Firozpur"
+      },
+      "2250": {
+        "custom_name": "Bathinda Bulls",
+        "custom_short_name": "Bathinda"
+      },
+      "2251": {
+        "custom_name": "Amritsar Alligators",
+        "custom_short_name": "Amritsar"
+      },
+      "2252": {
+        "custom_name": "Prague CC Knights",
+        "custom_short_name": "Knights"
+      },
+      "2253": {
+        "custom_name": "Vinohrady Biancos",
+        "custom_short_name": "Biancos"
+      },
+      "2254": {
+        "custom_name": "Vinohrady Rossos",
+        "custom_short_name": "Rossos"
+      },
+      "2255": {
+        "custom_name": "Prague Spartans Vanguards",
+        "custom_short_name": "Spartans"
+      },
+      "2256": {
+        "custom_name": "St Gallen CC",
+        "custom_short_name": "St Gallen"
+      },
+      "2257": {
+        "custom_name": "Zurich Nomads CC",
+        "custom_short_name": "Nomads"
+      },
+      "2258": {
+        "custom_name": "Olten CC",
+        "custom_short_name": "Olten"
+      },
+      "2259": {
+        "custom_name": "Zurich Crickets CC",
+        "custom_short_name": "Crickets"
+      },
+      "2260": {
+        "custom_name": "Power CC",
+        "custom_short_name": "Power"
+      },
+      "2261": {
+        "custom_name": "Winterthur CC",
+        "custom_short_name": "Winterthur"
+      },
+      "2262": {
+        "custom_name": "Cossonay CC",
+        "custom_short_name": "Cossonay"
+      },
+      "2263": {
+        "custom_name": "Choiseul Clay Pots",
+        "custom_short_name": "Choiseul"
+      },
+      "2264": {
+        "custom_name": "Soufriere Sulphur City Stars",
+        "custom_short_name": "Soufriere"
+      },
+      "2265": {
+        "custom_name": "Mabouya Constrictors",
+        "custom_short_name": "Mabouya"
+      },
+      "2266": {
+        "custom_name": "Mon Repos Stars",
+        "custom_short_name": "Mon Repos"
+      },
+      "2267": {
+        "custom_name": "South Castries Lions",
+        "custom_short_name": "South Castries"
+      },
+      "2268": {
+        "custom_name": "Babonneau Leatherbacks",
+        "custom_short_name": "Babonneau"
+      },
+      "2269": {
+        "custom_name": "Central Castries Mindoo Heritage",
+        "custom_short_name": "Central Castries"
+      },
+      "2270": {
+        "custom_name": "Gros Islet Cannon Blasters",
+        "custom_short_name": "Gros Islet"
+      },
+      "2271": {
+        "custom_name": "Vieux Fort North Raiders",
+        "custom_short_name": "Vieux Fort"
+      },
+      "2272": {
+        "custom_name": "Laborie Bay Royals",
+        "custom_short_name": "Laborie"
+      },
+      "2273": {
+        "custom_name": "Nicosia Tigers CC",
+        "custom_short_name": "Tigers"
+      },
+      "2274": {
+        "custom_name": "Punjab Lions CC",
+        "custom_short_name": "Lions"
+      },
+      "2275": {
+        "custom_name": "Cyprus Moufflons CC",
+        "custom_short_name": "Moufflons"
+      },
+      "2276": {
+        "custom_name": "Nicosia XI Fighters CC",
+        "custom_short_name": "Fighters"
+      },
+      "2277": {
+        "custom_name": "Sri Lankan CC",
+        "custom_short_name": "Sri Lankan"
+      },
+      "2278": {
+        "custom_name": "Sri Lankan Lions Limassol CC",
+        "custom_short_name": "Limassol"
+      },
+      "2279": {
+        "custom_name": "Amdocs CC",
+        "custom_short_name": "Amdocs"
+      },
+      "2280": {
+        "custom_name": "Riyaan CC",
+        "custom_short_name": "Riyaan"
+      },
+      "2281": {
+        "custom_name": "Limassol Gladiators CC",
+        "custom_short_name": "Gladiators"
+      },
+      "2282": {
+        "custom_name": "CTL Eurocollege CC",
+        "custom_short_name": "Eurocollege"
+      },
+      "2283": {
+        "custom_name": "Spartan Heroes",
+        "custom_short_name": "Heroes"
+      },
+      "2284": {
+        "custom_name": "Global Riders",
+        "custom_short_name": "Riders"
+      },
+      "2285": {
+        "custom_name": "Puttlum Stars",
+        "custom_short_name": "Stars"
+      },
+      "2286": {
+        "custom_name": "Hurricane Blasters",
+        "custom_short_name": "Blasters"
+      },
+      "2287": {
+        "custom_name": "Chillow Warriors",
+        "custom_short_name": "Warriors"
+      },
+      "2288": {
+        "custom_name": "Power Gladiators",
+        "custom_short_name": "Gladiators"
+      },
+      "2289": {
+        "custom_name": "Royal Lions",
+        "custom_short_name": "Lions"
+      },
+      "2290": {
+        "custom_name": "Giant Legends",
+        "custom_short_name": "Legends"
+      },
+      "2291": {
+        "custom_name": "Prague CC Rooks",
+        "custom_short_name": "Rooks"
+      },
+      "2292": {
+        "custom_name": "Prague Barbarians Vandals",
+        "custom_short_name": "Barbarians"
+      },
+      "2293": {
+        "custom_name": "Budejovice Barracudas CC",
+        "custom_short_name": "Barracudas"
+      },
+      "2294": {
+        "custom_name": "Prague Spartans Mobilizers",
+        "custom_short_name": "Spartans"
+      },
+      "2295": {
+        "custom_name": "League Select XI",
+        "custom_short_name": "Select XI"
+      },
+      "2296": {
+        "custom_name": "Edmundson Irregulars XI",
+        "custom_short_name": "Edmundson"
+      },
+      "2297": {
+        "custom_name": "VFB Fallersleben",
+        "custom_short_name": "Fallersleben"
+      },
+      "1938": {
+        "custom_name": "SG Findorff E.V",
+        "custom_short_name": "Findorff"
+      },
+      "2298": {
+        "custom_name": "Brno Raptors",
+        "custom_short_name": "Raptors"
+      },
+      "2299": {
+        "custom_name": "Moravian CC",
+        "custom_short_name": "Moravian"
+      },
+      "2300": {
+        "custom_name": "Brno Rangers",
+        "custom_short_name": "Rangers"
+      },
+      "2301": {
+        "custom_name": "Brno Raiders",
+        "custom_short_name": "Raiders"
+      },
+      "2302": {
+        "custom_name": "Monaragala Hornets",
+        "custom_short_name": "Hornets"
+      },
+      "2303": {
+        "custom_name": "Wellawaya Vipers",
+        "custom_short_name": "Vipers"
+      },
+      "2304": {
+        "custom_name": "Mahiyanganaya Unilions",
+        "custom_short_name": "Unilions"
+      },
+      "2305": {
+        "custom_name": "Badulla Sea Eagles",
+        "custom_short_name": "Sea Eagles"
+      },
+      "2306": {
+        "custom_name": "Stockholm International Cricket Club",
+        "custom_short_name": "SICC"
+      },
+      "2307": {
+        "custom_name": "Spanga United CC",
+        "custom_short_name": "Spanga"
+      },
+      "2308": {
+        "custom_name": "Varmdo CC",
+        "custom_short_name": "Varmdo"
+      },
+      "2309": {
+        "custom_name": "Stockholm Tigers",
+        "custom_short_name": "Tigers"
+      },
+      "2310": {
+        "custom_name": "ATF St Ouen Springfield C.C.",
+        "custom_short_name": "Springfield"
+      },
+      "2311": {
+        "custom_name": "RGA Walkovers C.C.",
+        "custom_short_name": "Walkovers"
+      },
+      "2312": {
+        "custom_name": "Rathbones OV's C.C.",
+        "custom_short_name": "Rathbones"
+      },
+      "2313": {
+        "custom_name": "Farmers Caesareans C.C.",
+        "custom_short_name": "Caesareans"
+      },
+      "2314": {
+        "custom_name": "Vancouver Stars",
+        "custom_short_name": "Vancouver"
+      },
+      "2315": {
+        "custom_name": "Moncton Heroes",
+        "custom_short_name": "Moncton"
+      },
+      "2316": {
+        "custom_name": "Toronto Tigers",
+        "custom_short_name": "Toronto"
+      },
+      "2317": {
+        "custom_name": "Niagara Wonders",
+        "custom_short_name": "Niagara"
+      },
+      "2210": {
+        "custom_name": "Nacka CC",
+        "custom_short_name": "Nacka"
+      },
+      "2211": {
+        "custom_name": "Stockholm Super Kings",
+        "custom_short_name": "SSK"
+      },
+      "2212": {
+        "custom_name": "Orebro Cricket Klubb",
+        "custom_short_name": "Orebro"
+      },
+      "2213": {
+        "custom_name": "Saltsjobaden CC",
+        "custom_short_name": "Saltsjobaden"
+      },
+      "2214": {
+        "custom_name": "Marsta CC",
+        "custom_short_name": "Marsta"
+      },
+      "2215": {
+        "custom_name": "Alby Zalmi CC U23",
+        "custom_short_name": "Alby U23"
+      },
+      "2223": {
+        "custom_name": "Olly Tapp’s XI",
+        "custom_short_name": "Olly XI"
+      },
+      "2224": {
+        "custom_name": "Andy Cornford’s XI",
+        "custom_short_name": "Andy XI"
+      },
+      "2318": {
+        "custom_name": "Lusaka Heats",
+        "custom_short_name": "Heats"
+      },
+      "2319": {
+        "custom_name": "Kitwe Kings",
+        "custom_short_name": "Kings"
+      },
+      "2320": {
+        "custom_name": "Kabwe Stars",
+        "custom_short_name": "Stars"
+      },
+      "2321": {
+        "custom_name": "Ndola Blitz",
+        "custom_short_name": "Blitz"
+      },
+      "1679": {
+        "custom_name": "Cape Town Blitz",
+        "custom_short_name": "Blitz"
+      }
+    },
+    "football": {
+      "97": {
+        "custom_name": "Real Madrid",
+        "custom_short_name": "R. Madrid"
+      },
+      "91": {
+        "custom_name": "Barcelona",
+        "custom_short_name": "Barcelona"
+      },
+      "102": {
+        "custom_name": "Atlético Madrid",
+        "custom_short_name": "A. Madrid"
+      },
+      "101": {
+        "custom_name": "Sevilla",
+        "custom_short_name": "Sevilla"
+      },
+      "100": {
+        "custom_name": "Villarreal",
+        "custom_short_name": "Villarreal"
+      },
+      "103": {
+        "custom_name": "Getafe",
+        "custom_short_name": "Getafe"
+      },
+      "98": {
+        "custom_name": "Real Sociedad",
+        "custom_short_name": "R. Sociedad"
+      },
+      "90": {
+        "custom_name": "Athletic Bilbao",
+        "custom_short_name": "Athletic. B"
+      },
+      "109": {
+        "custom_name": "Granada",
+        "custom_short_name": "Granada"
+      },
+      "99": {
+        "custom_name": "Valencia",
+        "custom_short_name": "Valencia"
+      },
+      "164": {
+        "custom_name": "Osasuna",
+        "custom_short_name": "Osasuna"
+      },
+      "104": {
+        "custom_name": "Levante",
+        "custom_short_name": "Levante"
+      },
+      "160": {
+        "custom_name": "Real Betis",
+        "custom_short_name": "Betis"
+      },
+      "158": {
+        "custom_name": "Valladolid",
+        "custom_short_name": "Valladolid"
+      },
+      "153": {
+        "custom_name": "Alavés",
+        "custom_short_name": "Alavés"
+      },
+      "107": {
+        "custom_name": "Eibar",
+        "custom_short_name": "Eibar"
+      },
+      "92": {
+        "custom_name": "Celta Vigo",
+        "custom_short_name": "C. Vigo"
+      },
+      "155": {
+        "custom_name": "Mallorca",
+        "custom_short_name": "Mallorca"
+      },
+      "174": {
+        "custom_name": "Leganés",
+        "custom_short_name": "Leganés"
+      },
+      "93": {
+        "custom_name": "Espanyol",
+        "custom_short_name": "Espanyol"
+      },
+      "61": {
+        "custom_name": "Bayern Munich",
+        "custom_short_name": "Bayern. M "
+      },
+      "55": {
+        "custom_name": "Borussia Dortmund",
+        "custom_short_name": "Dortmund"
+      },
+      "967": {
+        "custom_name": "RB Leipzig",
+        "custom_short_name": "Leipzig"
+      },
+      "65": {
+        "custom_name": "Mönchengladbach",
+        "custom_short_name": "M'gladbach"
+      },
+      "60": {
+        "custom_name": "Bayer Leverkusen",
+        "custom_short_name": "Leverkusen"
+      },
+      "69": {
+        "custom_name": "1899 Hoffenheim",
+        "custom_short_name": "Hoffenheim"
+      },
+      "64": {
+        "custom_name": "VfL Wolfsburg",
+        "custom_short_name": "Wolfsburg"
+      },
+      "57": {
+        "custom_name": "SC Freiburg",
+        "custom_short_name": "Freiburg"
+      },
+      "56": {
+        "custom_name": "Eintracht Frankfurt",
+        "custom_short_name": "Frankfurt"
+      },
+      "53": {
+        "custom_name": "Hertha BSC Berlin",
+        "custom_short_name": "H. Berlin"
+      },
+      "1329": {
+        "custom_name": "FC Union Berlin",
+        "custom_short_name": "FC. Berlin"
+      },
+      "62": {
+        "custom_name": "FC Schalke 04",
+        "custom_short_name": "Schalke"
+      },
+      "67": {
+        "custom_name": "FSV Mainz 05",
+        "custom_short_name": "Mainz"
+      },
+      "59": {
+        "custom_name": "1. FC Köln",
+        "custom_short_name": "FC Köln"
+      },
+      "68": {
+        "custom_name": "FC Augsburg",
+        "custom_short_name": "Augsburg"
+      },
+      "54": {
+        "custom_name": "Werder Bremen",
+        "custom_short_name": "W. Bremen"
+      },
+      "1318": {
+        "custom_name": "Fortuna Dusseldorf",
+        "custom_short_name": "Dusseldorf"
+      },
+      "1333": {
+        "custom_name": "SC Paderborn 07",
+        "custom_short_name": "Paderborn"
+      },
+      "1348": {
+        "custom_name": "1. FC Heidenheim 1846",
+        "custom_short_name": "Heidenheim"
+      },
+      "5": {
+        "custom_name": "Liverpool",
+        "custom_short_name": "Liverpool"
+      },
+      "6": {
+        "custom_name": "Manchester City",
+        "custom_short_name": "Man City"
+      },
+      "87": {
+        "custom_name": "Leicester City",
+        "custom_short_name": "Leicester"
+      },
+      "3": {
+        "custom_name": "Chelsea",
+        "custom_short_name": "Chelsea"
+      },
+      "7": {
+        "custom_name": "Manchester United",
+        "custom_short_name": "Man Utd"
+      },
+      "837": {
+        "custom_name": "Wolverhampton",
+        "custom_short_name": "Wolves"
+      },
+      "1": {
+        "custom_name": "Arsenal",
+        "custom_short_name": "Arsenal"
+      },
+      "11": {
+        "custom_name": "Tottenham Hotspur",
+        "custom_short_name": "Tottenham"
+      },
+      "89": {
+        "custom_name": "Burnley",
+        "custom_short_name": "Burnley"
+      },
+      "835": {
+        "custom_name": "Sheffield United",
+        "custom_short_name": "Sheffield"
+      },
+      "4": {
+        "custom_name": "Everton",
+        "custom_short_name": "Everton"
+      },
+      "13": {
+        "custom_name": "Crystal Palace",
+        "custom_short_name": "C. Palace"
+      },
+      "8": {
+        "custom_name": "Newcastle United",
+        "custom_short_name": "Newcastle"
+      },
+      "9": {
+        "custom_name": "Southampton",
+        "custom_short_name": "Southampton"
+      },
+      "860": {
+        "custom_name": "Brighton & Hove Albion",
+        "custom_short_name": "Brighton"
+      },
+      "12": {
+        "custom_name": "West Ham United",
+        "custom_short_name": "West Ham"
+      },
+      "687": {
+        "custom_name": "Watford",
+        "custom_short_name": "Watford"
+      },
+      "2": {
+        "custom_name": "Aston Villa",
+        "custom_short_name": "Villa"
+      },
+      "688": {
+        "custom_name": "Bournemouth",
+        "custom_short_name": "Bournemouth"
+      },
+      "14": {
+        "custom_name": "Norwich City N",
+        "custom_short_name": "Norwich"
+      },
+      "514": {
+        "custom_name": "Juventus",
+        "custom_short_name": "Juventus"
+      },
+      "689": {
+        "custom_name": "Lazio",
+        "custom_short_name": "Lazio"
+      },
+      "291": {
+        "custom_name": "Inter Milan",
+        "custom_short_name": "Inter"
+      },
+      "808": {
+        "custom_name": "Atalanta",
+        "custom_short_name": "Atalanta"
+      },
+      "521": {
+        "custom_name": "Roma",
+        "custom_short_name": "Roma"
+      },
+      "211": {
+        "custom_name": "Napoli",
+        "custom_short_name": "Napoli"
+      },
+      "810": {
+        "custom_name": "AC Milan",
+        "custom_short_name": "AC Milan"
+      },
+      "812": {
+        "custom_name": "Verona",
+        "custom_short_name": "Verona"
+      },
+      "1019": {
+        "custom_name": "Cagliari",
+        "custom_short_name": "Cagliari"
+      },
+      "1319": {
+        "custom_name": "Parma Calcio 1913",
+        "custom_short_name": "Parma"
+      },
+      "809": {
+        "custom_name": "Bologna",
+        "custom_short_name": "Bologna"
+      },
+      "818": {
+        "custom_name": "Sassuolo",
+        "custom_short_name": "Sassuolo"
+      },
+      "263": {
+        "custom_name": "Torino",
+        "custom_short_name": "Torino"
+      },
+      "529": {
+        "custom_name": "Fiorentina",
+        "custom_short_name": "Fiorentina"
+      },
+      "703": {
+        "custom_name": "Sampdoria",
+        "custom_short_name": "Sampdoria"
+      },
+      "811": {
+        "custom_name": "Udinese",
+        "custom_short_name": "Udinese"
+      },
+      "814": {
+        "custom_name": "Genoa",
+        "custom_short_name": "Genoa"
+      },
+      "1461": {
+        "custom_name": "US Lecce",
+        "custom_short_name": "Lecce"
+      },
+      "1158": {
+        "custom_name": "SPAL",
+        "custom_short_name": "SPAL"
+      },
+      "1462": {
+        "custom_name": "Brescia Calcio",
+        "custom_short_name": "Brescia"
+      }
+    }
+  },
+  "tours": {
+    "cricket": {
+      "860": {
+        "custom_name": "Indian T20 League",
+        "custom_short_name": "IPL"
+      },
+      "898": {
+        "custom_name": "World Cup, 2019",
+        "custom_short_name": "World Cup, 2019"
+      },
+      "1095": {
+        "custom_name": "World Cup Warm-up Matches, 2019",
+        "custom_short_name": "World Cup Warm-up Matches, 2019"
+      },
+      "1082": {
+        "custom_name": "World Twenty20 Africa Qualifier, 2019",
+        "custom_short_name": "World Twenty20 Africa Qualifier, 2019"
+      },
+      "997": {
+        "custom_name": "Indian T20 League, 2019",
+        "custom_short_name": "IPL"
+      },
+      "1667": {
+        "custom_name": "Indian T20 League, 2020",
+        "custom_short_name": "IPL"
+      },
+      "3130": {
+        "custom_name": "Indian T20 League, 2019",
+        "custom_short_name": "IPL"
+      },
+      "3978": {
+        "custom_name": "Indian T20 League, 2020",
+        "custom_short_name": "IPL"
+      }
+    }
+  }
+}

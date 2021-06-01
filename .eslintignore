@@ -1,0 +1,8 @@
+node_modules/
+test/
+logs/
+application-logs/
+static/
+nuxt-build/
+dist/
+*.min.js

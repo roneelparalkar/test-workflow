@@ -1,0 +1,69 @@
+@import "../../../../sass/variables";
+@import "../../../../sass/mixins";
+@import "_variables";
+@import "_mixin";
+
+
+.site {
+	&-footer {
+		@include flex-config (flex, null, space-between, center);
+		background-color: #002B61;
+		position: absolute;
+		bottom: 0px;
+		max-width: calc(100% - 210px);
+		width: 100%;
+		@include border-radius (5px 0 0 5px);
+		padding: 0 20px;
+		height: 60px;
+
+		.copyrights {
+			font-size: 10px;
+			color: $secondary-color;
+			font-family: $medium_font-family;
+		}
+		.footer-links {
+			a {
+				font-size: 9px;
+				color: $secondary-color;
+				position: relative;
+				padding: 0 5px;
+				&:not(:last-child):before {
+					content: "";
+					background-color: $secondary-color;
+					width: 1px;
+					height: 12px;
+					position: absolute;
+					right: -2px;
+					transform: translateY(-50%);
+					top: 50%;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+@media screen and (max-width: $media-phone-max) {
+	.site {
+		&-footer {
+			position: relative;
+			flex-basis: 100%;
+			max-width: 100%;
+			background: #103C8C;
+			flex-direction: column;
+			padding: 0;
+			text-align: center;
+			height: 80px;
+			.copyrights {
+				width: 100%;
+				background: #002B61;
+				padding: 10px 0;
+			}
+			.footer-links {
+				padding: 10px 0;
+			}
+		}
+	}
+}

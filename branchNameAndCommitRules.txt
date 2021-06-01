@@ -1,0 +1,23 @@
+Commits message convention
+    For Commits - commit msg should start with either of the following values(type) 
+    followed by a space and then a commit msg.Changelog will be created and software 
+    version will be updated based on the type used :-
+        - fix:
+        - feat:
+        - refactor:
+        - perf:
+        - revert:
+        - test:
+        - docs:
+        - fix!:
+        - feat!:
+
+    Version Management
+    fix - Minor Version Update
+    feat - Patch Version Update
+    fix! OR feat! - Breaking Change leads to Major Version Update
+    refactor/perf/test/revert/docs - Minor Version Update
+
+    For example:- 
+        feature commit will be 
+            - git commit -m 'feat: your_commit_msg'

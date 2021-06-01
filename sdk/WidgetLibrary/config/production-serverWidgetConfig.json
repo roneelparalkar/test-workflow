@@ -1,0 +1,625 @@
+{
+  "wafapi": "https://sportsadda-services.sportz.io/apiv3/gettemplatedata?url={{SLUG}}",
+  "authKey": "1234567890",
+  "redirections": {
+    "/cricket/podcasts": "/cricket",
+    "/kabaddi/podcasts": "/kabaddi",
+    "/football/podcasts": "/football",
+    "/cricket/social-buzz": "/cricket/features",
+    "/kabaddi/social-buzz": "/kabaddi/features",
+    "/football/social-buzz": "/football/features",
+    "/football/mumbai-city-fc": "/football",
+    "/cricket/heart-of-the-cheer": "/cricket/videos"
+  },
+  "regexRedirections": {
+    "/cricket/podcasts/*": "/cricket",
+    "/kabaddi/podcasts/*": "/kabaddi",
+    "/football/podcasts/*": "/football",
+    "/football/mumbai-city-fc/*": "/football",
+    "/cricket/series/([a-z0-9-]+)-([0-9]+)(/(news|videos|features|opinions|points-table|stats|tracker))?$": "/cricket/series/{1}-{2}/scores-fixtures"
+  },
+  "footballScoreCardMapper": {
+    "epl": "premier-league",
+    "liga": "la-liga",
+    "bund": "bundesliga",
+    "seriea": "serie-a",
+    "fran": "ligue-1",
+    "chlg": "uefa-champions-league",
+    "europa": "uefa-europa-league",
+    "india_sl": "indian-super-league"
+  },
+  "imagePaths": {
+    "teamImg": "{{DOMAIN_URL}}/static-assets/images/{{SPORT}}/teams/{{TEAM_ID}}.png?v={{IMGVERSION}}",
+    "playerImg": "{{DOMAIN_URL}}/static-assets/images/{{SPORT}}/players/{{PLAYER_ID}}.png?v={{IMGVERSION}}"
+  },
+  "commonApis": {
+    "translations": "https://stg-sportsadda.sportz.io/static-assets/feeds/multisport/translations.json?v={{FEEDVERSION}}",
+    "customNames": "https://stg-sportsadda.sportz.io/static-assets/feeds/multisport/customNames.json?v={{FEEDVERSION}}"
+  },
+  "signaturesToCache": {
+    "signatures": [
+      "?methodtype=3&client=7374756d70&sport=1&league=0&timezone=0530&language=en&daterange=01042021-30042021",
+      "?methodtype=3&client=7374756d70&sport=1&league=0&timezone=0530&language=en&datelist=true",
+      "static-assets/feeds/multisport/team_tour_listing.json"
+    ]
+  },
+  "widgets": {
+    "si-scorestrip": {
+      "apis": {
+        "multiSport": "https://stg-sportsadda.sportz.io/default.aspx?methodtype=3&client=7374756d70&sport={{SPORT}}&league={{LEAGUE}}&timezone=0530&language={{LANG}}&{{FEEDTYPE}}={{FEEDVALUE}}"
+      }
+    },
+    "si-standings": {
+      "sportApis": {
+        "1": "https://stg-sportsadda.sportz.io/cricket/live/json/standing_{{SERIESID}}.json",
+        "2": "https://stg-sportsadda.sportz.io/football/live/{{LEAGUECODE}}/json/{{SERIESID}}_standings.json",
+        "3": "https://stg-sportsadda.sportz.io/kabaddi/live/json/{{SERIESID}}_standing.json"
+      }
+    },
+    "si-seriesarchives": {
+      "apis": {
+        "seriesListing": "https://beta-sportsadda.sportz.io/static-assets/waf-feeds/cricket/static/json/{{YEAR}}_tour_series.json"
+      },
+      "years": ["2020", "2021"]
+    },
+    "si-fixtures": {
+      "defaultTab": "Recent",
+      "apis": {
+        "dateList": "https://stg-sportsadda.sportz.io/default.aspx?methodtype=3&client=7374756d70&sport={{SPORT}}&league={{LEAGUECODE}}&timezone=0530&language={{LANG}}&datelist=true",
+        "multiSport": "https://stg-sportsadda.sportz.io/default.aspx?methodtype=3&client=7374756d70&sport={{SPORT}}&league={{LEAGUECODE}}&timezone=0530&language={{LANG}}&{{FEEDTYPE}}={{FEEDVALUE}}",
+        "teamTourList": "https://stg-sportsadda.sportz.io/static-assets/feeds/multisport/team_tour_listing.json?v={{FEEDVERSION}}"
+      },
+      "teamTourList": {
+        "1": "https://stg-sportsadda.sportz.io/cricket/live/json/{{SERIESID}}_standings.json",
+        "2": "https://stg-sportsadda.sportz.io/football/live/{{LEAGUECODE}}/json/{{SERIESID}}_standings.json",
+        "3": "https://stg-sportsadda.sportz.io/kabaddi/live/json/{{SERIESID}}_standing.json"
+      }
+    },
+    "si-statslisting": {
+      "apis": {
+        "stats": "https://stg-sportsadda.sportz.io/cricket/static/json/{{SERIESID}}_{{STATSID}}_stats.json"
+      },
+      "statsKeysMapper": [
+        {
+          "stat_id": 1,
+          "data_key": "highest_score"
+        },
+        {
+          "stat_id": 2,
+          "data_key": "runs_scored"
+        },
+        {
+          "stat_id": 3,
+          "data_key": "batting_strike_rate"
+        },
+        {
+          "stat_id": 4,
+          "data_key": "batting_strike_rate"
+        },
+        {
+          "stat_id": 5,
+          "data_key": "fifties"
+        },
+        {
+          "stat_id": 6,
+          "data_key": "hundred"
+        },
+        {
+          "stat_id": 7,
+          "data_key": "fours"
+        },
+        {
+          "stat_id": 8,
+          "data_key": "sixes"
+        },
+        {
+          "stat_id": 9,
+          "data_key": "zeroes"
+        },
+        {
+          "stat_id": 10,
+          "data_key": "runs_scored"
+        },
+        {
+          "stat_id": 12,
+          "data_key": "wickets|/|runs_given"
+        },
+        {
+          "stat_id": 13,
+          "data_key": "wickets"
+        },
+        {
+          "stat_id": 14,
+          "data_key": "bowling_strike_rate"
+        },
+        {
+          "stat_id": 15,
+          "data_key": "best_bowling_average"
+        },
+        {
+          "stat_id": 16,
+          "data_key": "economy"
+        },
+        {
+          "stat_id": 17,
+          "data_key": "five_wickets_haul"
+        },
+        {
+          "stat_id": 18,
+          "data_key": "three_wickets_haul"
+        },
+        {
+          "stat_id": 20,
+          "data_key": "runs_scored"
+        },
+        {
+          "stat_id": 21,
+          "data_key": "most_catches"
+        },
+        {
+          "stat_id": 22,
+          "data_key": "most_run_outs"
+        },
+        {
+          "stat_id": 23,
+          "data_key": "most_dismissals"
+        },
+        {
+          "stat_id": 24,
+          "data_key": "highest_team_total"
+        },
+        {
+          "stat_id": 25,
+          "data_key": "lowest_team_total"
+        },
+        {
+          "stat_id": 26,
+          "data_key": "team_highest_margin_victory_runs"
+        },
+        {
+          "stat_id": 27,
+          "data_key": "team_highest_margin_victory_wickets"
+        },
+        {
+          "stat_id": 29,
+          "data_key": "team_most_extra_runs_conceded"
+        },
+        {
+          "stat_id": 30,
+          "data_key": "team_lowest_margin_victory_runs"
+        },
+        {
+          "stat_id": 31,
+          "data_key": "team_lowest_margin_victory_wickets"
+        },
+        {
+          "stat_id": 32,
+          "data_key": "most_maidens"
+        },
+        {
+          "stat_id": 33,
+          "data_key": "overs"
+        },
+        {
+          "stat_id": 51,
+          "data_key": "team_lowest_margin_victory_wickets"
+        }
+      ]
+    },
+    "si-cricketscorecard": {
+      "apis": {
+        "gameData": "https://stg-sportsadda.sportz.io/cricket/live/json/{{GAMECODE}}.json"
+      },
+      "otherApis": {
+        "commentary": "https://stg-sportsadda.sportz.io/functions/wallstream/?sport_id=1&client_id=rPhqZfQFgusvF4M1mwvuEA==&match_id={{MATCHID}}&page_size=10&page_no=1&session={{SESSION}}"
+      }
+    },
+    "si-footballscorecard": {
+      "apis": {
+        "gameData": "https://stg-sportsadda.sportz.io/football/live/{{LEAGUECODE}}/json/{{GAMECODE}}.json"
+      }
+    },
+    "si-kabaddiscorecard": {
+      "apis": {
+        "gameData": "https://stg-sportsadda.sportz.io/kabaddi/live/json/{{GAMECODE}}_match.json"
+      }
+    },
+    "si-tracker": {
+      "apis": {
+        "trackerData": "https://stg-sportsadda.sportz.io/cricket/live/json/{{SERIESID}}_tournament_tracker.json"
+      }
+    },
+    "si-statsdetail": {
+      "apis": {
+        "stats": "https://stg-sportsadda.sportz.io/cricket/static/json/{{SERIESID}}_{{STATSID}}_stats.json"
+      },
+      "statsConfig": [
+        {
+          "id": "2",
+          "name": "mostruns",
+          "displayName": "Most Runs",
+          "attributes": [
+            {
+              "displayName": "INN",
+              "nodeName": "innings_played"
+            },
+            {
+              "displayName": "Runs",
+              "nodeName": "runs_scored",
+              "highlight": true
+            },
+            {
+              "displayName": "Avg",
+              "nodeName": "average"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "batting_strike_rate"
+            },
+            {
+              "displayName": "4s",
+              "nodeName": "fours"
+            },
+            {
+              "displayName": "6s",
+              "nodeName": "sixes"
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "name": "highestIndividualScore",
+          "displayName": "Highest Individual Score",
+          "attributes": [
+            {
+              "displayName": "HS",
+              "nodeName": "highest_score",
+              "highlight": true
+            },
+            {
+              "displayName": "Balls Faced",
+              "nodeName": "balls_faced"
+            },
+            {
+              "displayName": "Vs",
+              "nodeName": "vs_team_name"
+            },
+            {
+              "displayName": "S/R",
+              "nodeName": "batting_strike_rate"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "name": "highestAverage",
+          "displayName": "Highest Average",
+          "attributes": [
+            {
+              "displayName": "INN",
+              "nodeName": "innings_played"
+            },
+            {
+              "displayName": "Runs",
+              "nodeName": "runs_scored"
+            },
+            {
+              "displayName": "Avg",
+              "nodeName": "average",
+              "highlight": true
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "batting_strike_rate"
+            },
+            {
+              "displayName": "4s",
+              "nodeName": "fours"
+            },
+            {
+              "displayName": "6s",
+              "nodeName": "sixes"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "name": "highestStrikeRate",
+          "displayName": "Highest Strike Rate",
+          "attributes": [
+            {
+              "displayName": "INN",
+              "nodeName": "innings_played"
+            },
+            {
+              "displayName": "Runs",
+              "nodeName": "runs_scored"
+            },
+            {
+              "displayName": "Avg",
+              "nodeName": "average"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "batting_strike_rate",
+              "highlight": true
+            },
+            {
+              "displayName": "4s",
+              "nodeName": "fours"
+            },
+            {
+              "displayName": "6s",
+              "nodeName": "sixes"
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "name": "mosthundreds",
+          "displayName": "Most Hundreds",
+          "attributes": [
+            {
+              "displayName": "INN",
+              "nodeName": "innings_played"
+            },
+            {
+              "displayName": "Runs",
+              "nodeName": "runs_scored"
+            },
+            {
+              "displayName": "Avg",
+              "nodeName": "average"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "batting_strike_rate"
+            },
+            {
+              "displayName": "50s",
+              "nodeName": "fifties"
+            },
+            {
+              "displayName": "100s",
+              "nodeName": "hundred",
+              "highlight": true
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "name": "mostfifties",
+          "displayName": "Most Fifties",
+          "attributes": [
+            {
+              "displayName": "INN",
+              "nodeName": "innings_played"
+            },
+            {
+              "displayName": "Runs",
+              "nodeName": "runs_scored"
+            },
+            {
+              "displayName": "Avg",
+              "nodeName": "average"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "batting_strike_rate"
+            },
+            {
+              "displayName": "50s",
+              "nodeName": "fifties",
+              "highlight": true
+            },
+            {
+              "displayName": "100s",
+              "nodeName": "hundred"
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "name": "mostfours",
+          "displayName": "Most Fours",
+          "attributes": [
+            {
+              "displayName": "INN",
+              "nodeName": "innings_played"
+            },
+            {
+              "displayName": "Runs",
+              "nodeName": "runs_scored"
+            },
+            {
+              "displayName": "Avg",
+              "nodeName": "average"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "batting_strike_rate"
+            },
+            {
+              "displayName": "4s",
+              "nodeName": "fours",
+              "highlight": true
+            },
+            {
+              "displayName": "6s",
+              "nodeName": "sixes"
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "name": "mostsixes",
+          "displayName": "Most Sixes",
+          "attributes": [
+            {
+              "displayName": "INN",
+              "nodeName": "innings_played"
+            },
+            {
+              "displayName": "Runs",
+              "nodeName": "runs_scored"
+            },
+            {
+              "displayName": "Avg",
+              "nodeName": "average"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "batting_strike_rate"
+            },
+            {
+              "displayName": "4s",
+              "nodeName": "fours"
+            },
+            {
+              "displayName": "6s",
+              "nodeName": "sixes",
+              "highlight": true
+            }
+          ]
+        },
+        {
+          "id": "13",
+          "name": "mostWickets",
+          "displayName": "Most Wickets",
+          "attributes": [
+            {
+              "displayName": "MAT",
+              "nodeName": "matches_played"
+            },
+            {
+              "displayName": "OVR",
+              "nodeName": "overs"
+            },
+            {
+              "displayName": "WKTS",
+              "nodeName": "wickets",
+              "highlight": true
+            },
+            {
+              "displayName": "AVG",
+              "nodeName": "best_bowling_average"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "bowling_strike_rate"
+            },
+            {
+              "displayName": "ECON",
+              "nodeName": "economy"
+            }
+          ]
+        },
+        {
+          "id": "12",
+          "name": "bestBowlingFigure",
+          "displayName": "Best Bowling Figure",
+          "attributes": [
+            {
+              "displayName": "OVR",
+              "nodeName": "overs"
+            },
+            {
+              "displayName": "MAIDENS",
+              "nodeName": "most_maidens"
+            },
+            {
+              "displayName": "BBF",
+              "nodeName": "best_bowling_figures",
+              "highlight": true
+            },
+            {
+              "displayName": "VS",
+              "nodeName": "vs_team_name"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "bowling_strike_rate"
+            },
+            {
+              "displayName": "ECON",
+              "nodeName": "economy"
+            }
+          ]
+        },
+        {
+          "id": "17",
+          "name": "most5WicketHauls",
+          "displayName": "Most Five Wicket Hauls",
+          "attributes": [
+            {
+              "displayName": "MAT",
+              "nodeName": "matches_played"
+            },
+            {
+              "displayName": "OVR",
+              "nodeName": "overs"
+            },
+            {
+              "displayName": "WKTS",
+              "nodeName": "wickets"
+            },
+            {
+              "displayName": "AVG",
+              "nodeName": "best_bowling_average"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "bowling_strike_rate"
+            },
+            {
+              "displayName": "ECON",
+              "nodeName": "economy"
+            },
+            {
+              "displayName": "5W",
+              "nodeName": "five_wickets_haul",
+              "highlight": true
+            }
+          ]
+        },
+        {
+          "id": "16",
+          "name": "bestEconomy",
+          "displayName": "Best Economy",
+          "attributes": [
+            {
+              "displayName": "MAT",
+              "nodeName": "matches_played"
+            },
+            {
+              "displayName": "OVR",
+              "nodeName": "overs"
+            },
+            {
+              "displayName": "WKTS",
+              "nodeName": "wickets"
+            },
+            {
+              "displayName": "AVG",
+              "nodeName": "best_bowling_average"
+            },
+            {
+              "displayName": "SR",
+              "nodeName": "bowling_strike_rate"
+            },
+            {
+              "displayName": "ECON",
+              "nodeName": "economy",
+              "highlight": true
+            }
+          ]
+        }
+      ]
+    },
+    "si-ads": {
+      "apis": {
+        "pollApi": "https://stg-sportsadda.sportz.io/api/polldetail/{{POLLID}}?spgnnum=1&sitem=1&user_guid={{USER_GUID}}"
+      }
+    }
+  }
+}
