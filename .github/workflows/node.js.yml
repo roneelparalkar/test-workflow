@@ -1,0 +1,30 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  codeQuality:
+    runs-on: ubuntu-latest
+    name: Code Quality Check
+    steps:
+      - uses: actions/checkout@v1
+      - name: Code Scan
+        id: njsscan
+        uses: ajinabraham/njsscan-action@v5
+        with:
+          args: ". --sarif --output results.sarif || true"
+      - name: Upload Report
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: results.sarif
+
+      - uses: actions/checkout@v2
+      - name: Linting check
+        uses: actions/setup-node@v2
+      - run: npm i
+      - run: npm run lint-git-workflow
